@@ -2,29 +2,146 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Направления</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Направления</title>
 </head>
 
 <body>
-    <header>
+  <header>
+    <nav>
+      <div>
+        <a href="index.html"><img src="img/icon/lobo-mobile.png" alt="логотип погнали"></a>
+        <button>Бургер</button>
+      </div>
+    </nav>
+    <section>
+      <h1>Направления</h1>
+    </section>
+  </header>
+  <main>
+    <div>
+      <div>
         <div>
-            <h1>Шапка</h1>
-            <p>Проверка рабочшего процеса</p>
+          <b>80</b>
+          <p>level</p>
         </div>
-    </header>
-    <main>
+        <img src="img/demin-form-avatar.png" alt="аватар">
+      </div>
+      <button>Сменить фото</button>
+    </div>
+    <fieldset>
+      <legend>Теги</legend>
+      <a href="">#бургер</a>
+      <a href="">#бар</a>
+      <a href="">#футбол</a>
+      <a href="">#концерт</a>
+      <a href="">#крафт</a>
+    </fieldset>
+    <fieldset>
+      <legend>Транспорт</legend>
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+    </fieldset>
+    <div>
+      <strong>Мои планы:</strong>
+      <div>
+        <p>1.<b>Франция,Италия</b></p>
+        <p>3 попутчика<br>
+          26 мар — 29 мар</p>
+        <button>Изменить</button>
+      </div>
+      <div>
+        <p>2.<b>Таиланд,Индонезия</b></p>
+        <p>1 попутчик<br>
+          1 июл — 15 июл</p>
+        <button>Изменить</button>
+      </div>
+    </div>
+    <div>
+      <strong>Добавить план:</strong>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <b>Шаг 1.<br>Даты пребывания</b>
+        <p>Укажите предпочтительное количество попутчиков, которых
+          вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
         <div>
-            <h2>Тело</h2>
+          <div>
+            <section>
+              <p>Ищу попутчиков:</p>
+              <p>чел.</p>
+            </section>
+            <input type="number">
+          </div>
+          <div>
+            <section>
+              <p>Длительность:</p>
+              <p>дн.</p>
+            </section>
+            <input type="number">
+          </div>
+          <input type="checkbox" value="Можно с детьми" id="child">
+          <label for="child">Можно с детьми</label>
+          <div>
+            <input type="date">
+          </div>
+          <button>Следующий шаг</button>
         </div>
-    </main>
-    <footer>
         <div>
-            <h3>Подвал</h3>
+          <b>Шаг 2.<br>
+            Маршрут</b>
+          <p>Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
+          <select name="select" id="">
+            <option value="Босния и Герцеговина ">Босния и Герцеговина</option>
+          </select>
+          <select name="select" id="">
+            <option value=Чехия ">Чехия</option>
+          </select>
+          <select name=" select" id="">
+            <option value="Выберите страну">Выберите страну</option>
+          </select>
+          <select name="select" id="">
+            <option value="Выберите страну">Добавьте страну</option>
+          </select>
+          <div>
+            <button type="button">Следующий шаг</button>
+            <button type="button">На шаг назад</button>
+          </div>
         </div>
-    </footer>
+        <div>
+          <b>Шаг 3. Развлечения</b>
+          <p>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+          </p>
+        </div>
+        <div>
+          <b>Босния и Герцеговина</b>
+          <input type="textarea">
+          <b>Чехия</b>
+          <input type="textarea">
+          <div>
+            <button type="button">Следующий шаг</button>
+            <button type="button">На шаг назад</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div>
+      <a href="#"><img src="img/icon/lobo-mobile.png" alt="логотип погнали"></a>
+    </div>
+    <div>
+      <a href="#">Facebook</a>
+      <a href="#">Vk</a>
+      <a href="#">Instagramm</a>
+    </div>
+    <div>
+      <span>Разработано</span>
+      <a href="#">LOGO HTML</a>
+    </div>
+  </footer>
 </body>
 
 </html>
