@@ -10,19 +10,325 @@
 
 <body>
   <header>
-    <div>
-      <h1>Шапка</h1>
-      <p>Проверка рабочшего процеса</p>
-    </div>
+    <nav>
+      <div>
+        <a href="index.html"><img src="img/icon/lobo-mobile.png" alt="логотип погнали"></a>
+        <button>Бургер</button>
+      </div>
+    </nav>
+    <section>
+      <h1>Попутчики</h1>
+    </section>
   </header>
   <main>
+    <!-- фильтрация по странам -->
+    <!-- <div>
+      <div>
+        <button>Фильтрация по странам</button>
+      </div>
+      <div>
+        <ul>
+          <li><input type="radio" id="europe" name="continent">
+            <label for="continent"></label>Европа
+          </li>
+          <li><input type="radio" id="asia" name="continent">
+            <label for="continent"></label>Азия
+          </li>
+          <li><input type="radio" id="america" name="continent">
+            <label for="continent"></label>Америка
+          </li>
+          <li><input type="radio" id="islands" name="continent">
+            <label for="continent"></label>Острова
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><input type="radio" id="leter1" name="letter"><label for="leter1">а</label></li>
+          <li><input type="radio" id="leter2" name="letter"><label for="leter2">б</label></li>
+          <li><input type="radio" id="leter3" name="letter"><label for="leter3">в</label></li>
+          <li><input type="radio" id="leter4" name="letter"><label for="leter4">г</label></li>
+          <li><input type="radio" id="leter5" name="letter"><label for="leter5">д</label></li>
+          <li><input type="radio" id="leter6" name="letter"><label for="leter6">е</label></li>
+          <li><input type="radio" id="leter7" name="letter"><label for="leter7">з</label></li>
+          <li><input type="radio" id="leter8" name="letter"><label for="leter8">и</label></li>
+          <li><input type="radio" id="leter9" name="letter"><label for="leter9">к</label></li>
+          <li><input type="radio" id="leter10" name="letter"><label for="leter10">л</label></li>
+          <li><input type="radio" id="leter11" name="letter"><label for="leter11">м</label></li>
+          <li><input type="radio" id="leter12" name="letter"><label for="leter12">н</label></li>
+          <li><input type="radio" id="leter13" name="letter"><label for="leter13">о</label></li>
+          <li><input type="radio" id="leter14" name="letter"><label for="leter14">п</label></li>
+          <li><input type="radio" id="leter15" name="letter"><label for="leter15">р</label></li>
+          <li><input type="radio" id="leter16" name="letter"><label for="leter16">с</label></li>
+          <li><input type="radio" id="leter17" name="letter"><label for="leter17">т</label></li>
+          <li><input type="radio" id="leter18" name="letter"><label for="leter18">у</label></li>
+          <li><input type="radio" id="leter19" name="letter"><label for="leter19">ф</label></li>
+          <li><input type="radio" id="leter20" name="letter"><label for="leter20">х</label></li>
+          <li><input type="radio" id="leter21" name="letter"><label for="leter21">ч</label></li>
+          <li><input type="radio" id="leter22" name="letter"><label for="leter22">ш</label></li>
+          <li><input type="radio" id="leter23" name="letter"><label for="leter23">э</label></li>
+          <li><input type="radio" id="leter24" name="letter"><label for="leter24">ю</label></li>
+          <li><input type="radio" id="leter25" name="letter"><label for="leter25">я</label></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><a href="#">Австралия</a></li>
+          <li><a href="#">Австрия</a></li>
+          <li><a href="#">Азербайджан</a></li>
+          <li><a href="#">Албания</a></li>
+          <li><a href="#">Алжир</a></li>
+          <li><a href="#">Ангола</a></li>
+          <li><a href="#">Андорра</a></li>
+          <li><a href="#">Антигуа и Барбуда</a></li>
+          <li><a href="#">Аргентина</a></li>
+          <li><a href="#">Армения</a></li>
+          <li><a href="#">Афганистан</a></li>
+        </ul>
+      </div>
+      <button>свернуть</button>
+    </div> -->
+    <!---->
     <div>
-      <h2>Тело</h2>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <div>
+          <h2>Подберите деального попутчика</h2>
+        </div>
+        <div>
+          <p>Хобби</p>
+          <div>
+            <input type="checkbox" name="gym" id="gym" value="Спортзал">
+            <label for="gym">Спортзал</label>
+            <input type="checkbox" name="hookah" id="hookah" value="Кальян">
+            <label for="hookah">Кальян</label>
+            <input type="checkbox" name="sofa" id="sofa" value="Диван">
+            <label for="sofa">Диван</label>
+          </div>
+        </div>
+        <div>
+          <p>Музыка</p>
+          <div>
+            <input type="checkbox" name="rock" id="rock" value="Тяжёлый рок">
+            <label for="rock">Тяжёлый рок</label>
+            <input type="checkbox" name="rap" id="rap" value="Русский рэп">
+            <label for="rap">Русский рэп</label>
+            <input type="checkbox" name="eurodance" id="eurodance" value="Евроденс">
+            <label for="eurodance">Евроденс</label>
+          </div>
+        </div>
+        <div>
+          <p>Еда</p>
+          <div>
+            <input type="checkbox" name="meat" id="meat" value="Мясоед">
+            <label for="meat">Мясоед</label>
+            <input type="checkbox" name="PN" id="PN" value="Сидит на ПП">
+            <label for="PN">Сидит на ПП</label>
+            <input type="checkbox" name="vegetarian" id="vegetarian" value="Веган сыроед">
+            <label for="eurodance">Веган сыроед</label>
+          </div>
+        </div>
+        <div>
+          <p>Транспорт</p>
+          <div>
+            <input type="checkbox" name="Самолёт" id="airplane" value="">
+            <img src="" for="airplane" alt="Самолёт">
+            <input type="checkbox" name="Авто" id="auto" value="">
+            <img src="" for="auto" alt="Авто">
+            <input type="checkbox" name="Велосипед" id="bike" value="">
+            <img src="" for="bike" alt="Велосипед">
+            <input type="checkbox" name="Пешком" id="onfoot" value="">
+            <img src="" for="onfoot" alt="Пешком">
+          </div>
+        </div>
+        <div>
+          <p>Левел</p>
+          <div>
+            <input type="range" name="" id="" value="">
+          </div>
+        </div>
+        <button type="submit" value="Показать">Показать</button>
+      </form>
+    </div>
+    <div>
+      <div>
+        <div>
+          <p>Таня Фирсова</p>
+          <img src="img/firsova-avatar-icon.png" alt="аватар">
+          <div>
+            <button><img src="img/icon/icon_heart-like.svg" alt="лайк"><span>1,5м</span></button>
+          </div>
+        </div>
+        <div>
+          <p>
+            <a href="">#ЗОЖ</a>
+            <a href="">#ПП</a>
+            <a href="">#Фитнес</a>
+            <a href="">#пляж</a>
+            <a href="">#авокадо</a>
+            <a href="">#смузи</a>
+          </p>
+        </div>
+        <p>хочет посетить:</p>
+        <div>
+          <img src="img/icon/Srilanka-flag-mobile.svg" alt="шри-ланка">
+          <p>Шри-Ланка</p>
+          <img src="img/icon/Thailand-flag-mobile.svg" alt="Таиланд">
+          <p>Таиланд</p>
+          <img src="img/icon/Seychelles-flag-mobile.svg" alt="Сейшелы">
+          <p>Сейшелы</p>
+        </div>
+        <div>
+          <div>
+            <p>транспорт</p>
+            <img src="" alt="самолёт">
+            <img src="" alt="авто">
+            <img src="" alt="велосипед">
+            <img src="" alt="пешком">
+          </div>
+          <div>
+            <p>левел:</p>
+            <p>99</p>
+          </div>
+        </div>
+        <button>Позвать!</button>
+      </div>
+      <div>
+        <div>
+          <p>Петя Демин</p>
+          <img src="img/demin-avatar-icon.png" alt="аватар">
+          <div>
+            <button><img src="img/icon/icon_heart-like.svg" alt="лайк"><span>1500</span></button>
+          </div>
+        </div>
+        <div>
+          <p>
+            <a href="">#бургер</a>
+            <a href="">#бар</a>
+            <a href="">#футбол</a>
+            <a href="">#концерт</a>
+            <a href="">#крафт</a>
+          </p>
+        </div>
+        <p>хочет посетить:</p>
+        <div>
+          <img src="img/icon/Belgium-flag-mobile.svg" alt="Бельгия">
+          <p>Бельгия</p>
+          <img src="img/icon/Czech-flag-mobile.svg" alt="Таиланд">
+          <p>Чехия</p>
+        </div>
+        <div>
+          <div>
+            <p>транспорт</p>
+            <img src="" alt="самолёт">
+            <img src="" alt="авто">
+            <img src="" alt="велосипед">
+            <img src="" alt="пешком">
+          </div>
+          <div>
+            <p>левел:</p>
+            <p>80</p>
+          </div>
+        </div>
+        <button>Позвать!</button>
+      </div>
+      <div>
+        <div>
+          <p>Марк Смолов</p>
+          <img src="img/smolov-avatar-icon.png" alt="аватар">
+          <div>
+            <button><img src="img/icon/icon_heart-like.svg" alt="лайк"><span>170</span></button>
+          </div>
+        </div>
+        <div>
+          <p>
+            <a href="">#рэп</a>
+            <a href="">#тату</a>
+            <a href="">#хайпбист</a>
+            <a href="">#кросовки</a>
+            <a href="">#суприм</a>
+          </p>
+        </div>
+        <p>хочет посетить:</p>
+        <div>
+          <img src="img/icon/Unitedstatesofamerica-flag-icon.svg" alt="Америка">
+          <p>США</p>
+          <img src="img/icon/Australia-flag-icon.svg" alt="Австралия">
+          <p>Австралия</p>
+          <img src="img/icon/Dominica-flag-icon.svg" alt="Доминикана">
+          <p>Доминикана</p>
+        </div>
+        <div>
+          <div>
+            <p>транспорт</p>
+            <img src="" alt="самолёт">
+            <img src="" alt="авто">
+            <img src="" alt="велосипед">
+            <img src="" alt="пешком">
+          </div>
+          <div>
+            <p>левел:</p>
+            <p>25</p>
+          </div>
+        </div>
+        <button>Позвать!</button>
+      </div>
+      <div>
+        <div>
+          <p>Лариса Роговая</p>
+          <img src="img/rogovaja-avatar-icon.png" alt="аватар">
+          <div>
+            <button><img src="img/icon/icon_heart-like.svg" alt="лайк"><span>23</span></button>
+          </div>
+        </div>
+        <div>
+          <p>
+            <a href="">#образование</a>
+            <a href="">#карьера</a>
+            <a href="">#учёба</a>
+            <a href="">#линкедин</a>
+          </p>
+        </div>
+        <p>хочет посетить:</p>
+        <div>
+          <img src="img/icon/Unitedkingdom-flag-icon.svg" alt="Великобритания">
+          <p>Великобритания</p>
+          <img src="img/icon/Germany-flag-icon.svg" alt="Германия">
+          <p>Германия</p>
+        </div>
+        <div>
+          <div>
+            <p>транспорт</p>
+            <img src="" alt="самолёт">
+            <img src="" alt="авто">
+            <img src="" alt="велосипед">
+            <img src="" alt="пешком">
+          </div>
+          <div>
+            <p>левел:</p>
+            <p>50</p>
+          </div>
+        </div>
+        <button>Позвать!</button>
+      </div>
+      <div>
+        <button>Показать ещё</button>
+        <button>в лево</button>
+        <button>в право</button>
+      </div>
     </div>
   </main>
   <footer>
     <div>
-      <h3>Подвал</h3>
+      <a href="#"><img src="img/icon/lobo-mobile.png" alt="логотип погнали"></a>
+    </div>
+    <div>
+      <a href="#">Facebook</a>
+      <a href="#">Vk</a>
+      <a href="#">Instagramm</a>
+    </div>
+    <div>
+      <span>Разработано</span>
+      <a href="#">LOGO HTML</a>
     </div>
   </footer>
 </body>
