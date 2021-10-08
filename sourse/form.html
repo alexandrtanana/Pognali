@@ -67,64 +67,69 @@
       <strong class="form__title">Добавить план:</strong>
       <form action="https://echo.htmlacademy.ru" method="POST">
         <b class="form__subtitle">Шаг 1.<br>Даты пребывания</b>
-        <p>Укажите предпочтительное количество попутчиков, которых
+        <p class="form__subtitle-desc">Укажите предпочтительное количество попутчиков, которых
           вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
-        <div>
-          <div>
-            <section>
-              <p>Ищу попутчиков:</p>
-              <p>чел.</p>
+        <div class="form__date-wraper">
+          <div class="form__date-container">
+            <section class="form__date-people">
+              <p class="form__date-search">Ищу попутчиков:</p>
+              <p class="form__date-search-people">чел.</p>
             </section>
-            <input type="number">
+            <input class="form__people-input" type="number">
           </div>
-          <div>
-            <section>
-              <p>Длительность:</p>
-              <p>дн.</p>
+          <div class="form__date-container">
+            <section class="form__date-day">
+              <p class="form__date-duration">Длительность:</p>
+              <p class="form__date-duration-day">дн.</p>
             </section>
-            <input type="number">
+            <input class="form__day-input" type="number">
           </div>
-          <input type="checkbox" value="Можно с детьми" id="child">
-          <label for="child">Можно с детьми</label>
-          <div>
-            <input type="date">
+          <input class="form__child" type="checkbox" value="Можно с детьми" id="child">
+          <label class="form__child-label" for="child">Можно с детьми</label>
+          <div class="form__calendar">
+            <input class="form__calendar-input" type="date">
           </div>
-          <button>Следующий шаг</button>
+          <button class="form__button-next">Следующий шаг</button>
         </div>
-        <div>
+        <div class="form__route">
           <b>Шаг 2.<br>
             Маршрут</b>
           <p>Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
-          <select name="select" id="">
-            <option value="Босния и Герцеговина ">Босния и Герцеговина</option>
-          </select>
-          <select name="select" id="">
-            <option value=Чехия ">Чехия</option>
-          </select>
-          <select name=" select" id="">
-            <option value="Выберите страну">Выберите страну</option>
-          </select>
-          <select name="select" id="">
-            <option value="Выберите страну">Добавьте страну</option>
-          </select>
-          <div>
-            <button type="button">Следующий шаг</button>
-            <button type="button">На шаг назад</button>
+          <div class="form__route-wraper">
+            <select class="form__route-select" name="select" id="">
+              <option class="form__route-option" value="Босния и Герцеговина ">Босния и Герцеговина</option>
+            </select>
+            <select class="form__route-select" name="select" id="">
+              <option class="form__route-option" value=Чехия ">Чехия</option>
+            </select>
+            <select class=" form__route-select" name=" select" id="">
+              <option class="form__route-option" value="Выберите страну">Выберите страну</option>
+            </select>
+            <select class="form__route-select" name="select" id="">
+              <option class="form__route-option" value="Выберите страну">Добавьте страну</option>
+            </select>
+          </div>
+          <div class="form__button-container">
+            <button class="form__button-next" type="button">Следующий шаг</button>
+            <button class="form__button-back" type="button">На шаг назад</button>
           </div>
         </div>
-        <div>
-          <b>Шаг 3. Развлечения</b>
-          <p>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
-          </p>
-        </div>
-        <div>
-          <b>Босния и Герцеговина</b>
-          <input type="textarea">
-          <b>Чехия</b>
-          <input type="textarea">
-          <div>
-            <button type="button">Следующий шаг</button>
-            <button type="button">На шаг назад</button>
+        <div class="form__entertainment-wraper">
+          <div class="form__entertainment-container">
+            <b class="form__entertainment-text">Шаг 3. Развлечения</b>
+            <p class="form__entertainment-desc">Наконец, расскажите о своих планах времяпровождения. Можно писать в
+              свободной форме и ставить тэги.
+            </p>
+          </div>
+          <div class="form__entertainment-container">
+            <b class="form__entertainment-country">Босния и Герцеговина</b>
+            <input class="form__entertainment-input" type="textarea">
+            <b class="form__entertainment-country">Чехия</b>
+            <input class="form__entertainment-input" type="textarea">
+            <div class="form__button-container">
+              <button class="form__button-next" type="button">Следующий шаг</button>
+              <button class="form__button-back" type="button">На шаг назад</button>
+            </div>
           </div>
         </div>
       </form>
