@@ -1,0 +1,44 @@
+{
+  "name": "pognali",
+  "version": "1.0.0",
+  "description": "Consolidation of knowledge on the passed course HTML Academy \"Adaptive layout and automation\"",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "browser-sync": "^2.27.5",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-libsquoosh": "^1.0.12",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgstore": "^8.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^4.0.1",
+    "postcss-csso": "^5.0.1",
+    "sass": "^1.43.2"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandrtanana/Pognali.git"
+  },
+  "author": "Alexandr Tanana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandrtanana/Pognali/issues"
+  },
+  "homepage": "https://github.com/alexandrtanana/Pognali#readme"
+}

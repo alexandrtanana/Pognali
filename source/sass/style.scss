@@ -1,0 +1,19 @@
+$color: #fcfcfc;
+
+.promo__title {
+  color:yellowgreen;
+}
+
+.promo__desc-blockquote {
+  font-weight: 700;
+  color:blue;
+}
+
+.promo__desc-text{
+  background-color: $color;
+  color:hotpink;
+}
+
+a {
+  transition: all 0.5s ease-in-out;
+}
