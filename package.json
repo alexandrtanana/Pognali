@@ -2,9 +2,8 @@
   "name": "pognali",
   "version": "1.0.0",
   "description": "Consolidation of knowledge on the passed course HTML Academy \"Adaptive layout and automation\"",
-  "main": "index.html",
-  "dependencies": {},
-  "devDependencies": {
+  "main": "gulpfile.js",
+  "dependencies": {
     "autoprefixer": "^10.3.7",
     "browser-sync": "^2.27.5",
     "del": "^6.0.0",
@@ -18,18 +17,25 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
+    "gulp-stylelint": "^13.0.0",
     "gulp-svgstore": "^8.0.0",
     "gulp-terser": "^2.1.0",
     "gulp-webp": "^4.0.1",
+    "postcss": "^8.3.9",
     "postcss-csso": "^5.0.1",
-    "sass": "^1.43.2"
+    "sass": "^1.43.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-recess-order": "^2.5.0",
+    "stylelint-config-standard": "^22.0.0"
+  },
+  "devDependencies": {
+    "gulp-w3cjs": "^1.3.2"
   },
   "scripts": {
-    "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
-    "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
-    "start": "gulp"
+    "gulp": "gulp",
+    "gulp cssLint": "gulp-stylelint",
+    "gulp htmlLint": "w3cjs"
+
   },
   "repository": {
     "type": "git",

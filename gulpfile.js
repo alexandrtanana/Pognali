@@ -1,62 +1,80 @@
-var gulp = require('gulp');
-var rename = require('gulp-rename');
-var sass = require('gulp-sass')(require('sass'));
-var autoprefixer = require('gulp-autoprefixer');
-var sourcemaps = require('gulp-sourcemaps');
-var browserSync = require('browser-sync').create();
+const gulp = require("gulp");
+const plumber = require("gulp-plumber");
+const sourcemap = require("gulp-sourcemaps");
+const sass = require("gulp-sass")(require('sass'));
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
+const sync = require("browser-sync").create();
+const gulpStylelint = require('gulp-stylelint');
+const w3cjs = require('gulp-w3cjs');
 
 
-function css_style(done) {
-  gulp.src('source/sass/style.scss')
-  .pipe(sourcemaps.init())
-  .pipe(sass({
-    errorLogToConsole: true,
-    outputStyle: 'compressed'
+// Styles
+
+const styles = () => {
+  return gulp.src("source/sass/style.scss")
+  .pipe(gulpStylelint({
+    reporters: [
+      {formatter: 'string', console: true}
+    ]
   }))
-  .on('error', console.error.bind(console))
-  .pipe(autoprefixer({
-    overrideBrowserslist: ['last 5 versions'],
-    cascade: false
-  }))
-  .pipe(rename({suffix: '.min'}))
-  .pipe(sourcemaps.write('./'))
-  .pipe(gulp.dest('source/css/'))
-  .pipe(browserSync.stream());
-  done();
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("source/css"))
+    .pipe(sync.stream());
 }
+// const cssLint = () => {
+//   return gulp.src("source/sass/style.scss")
+//     .pipe(gulpStylelint({
+//       reporters: [
+//         {formatter: 'string', console: true}
+//       ]
+//     }));
+// }
 
-function sync(done) {
-  browserSync.init({
+// exports.cssLint = cssLint;
+exports.styles = styles;
+
+
+
+
+// HTML
+
+const htmlLint = () => {
+    return gulp.src('source/*.html')
+        .pipe(w3cjs())
+};
+exports.htmlLint = htmlLint;
+
+
+// Server
+
+const server = (done) => {
+  sync.init({
     server: {
-      baseDir: './source'
+      baseDir: 'source'
     },
-    port: 3000
+    cors: true,
+    notify: false,
+    ui: false,
   });
-  done()
-}
-
-function browserReload(done) {
-  browserSync.reload();
   done();
 }
 
-function print(done) {
-  console.log('Hi!');
-  done();
+exports.server = server;
+
+// Watcher
+
+const watcher = () => {
+  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/*.html").on("change", sync.reload);
 }
 
-function watchSass(){
-  gulp.watch('source/sass/**/style.scss',css_style);
-}
-
-function watchFiles(){
-  gulp.watch('source/sass/**/style.scss',css_style);
-  gulp.watch('./**/*.html',browserReload);
-  gulp.watch('./**/*.js',browserReload);
-}
-
-// gulp.task(css_style);
-// gulp.task(print);
-
-gulp.task('default', gulp.parallel(watchFiles, sync));
-gulp.task(sync);
+exports.default = gulp.series(
+  styles, server, watcher
+);
