@@ -21,21 +21,24 @@ const del = require("del");
 
 const styles = () => {
   return gulp.src("source/sass/style.scss")
-  .pipe(gulpStylelint({
-    reporters: [
-      {formatter: 'string', console: true}
-    ]
-  }))
+      .pipe(gulpStylelint({
+        reporters: [
+          {formatter: 'string', console: true}
+        ]
+      }))
   .pipe(plumber())
   .pipe(sourcemap.init())
   .pipe(sass())
   .pipe(postcss([
-    autoprefixer(),
+    autoprefixer({
+      overrideBrowserslist: ["last 5 versions"],
+      cascade: true
+    }),
     csso()
   ]))
   .pipe(rename("style.min.css"))
   .pipe(sourcemap.write("."))
-  .pipe(gulp.dest("build/css"))
+  .pipe(gulp.dest("source/css"))
   .pipe(sync.stream());
 }
 // const cssLint = () => {
@@ -126,8 +129,9 @@ exports.sprite = sprite;
 const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
+    "source/css/*.css",
     "source/*.ico",
-    "source/img/**/*.svg",
+    "source/img/**/*",
     "!source/img/icons/*.svg",
   ], {
     base: "source"
@@ -170,8 +174,9 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("source/js/script.js", gulp.series(scripts));
+  gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
 exports.default = gulp.series(
