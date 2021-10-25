@@ -1,19 +1,9 @@
-$white:  #fcfcfc;
+// Common
+@import "common/variables.scss";
+@import "common/visually-hidden.scss";
+@import "common/fonts.scss";
 
-.promo__title {
-  color: yellowgreen;
-}
+// Blocks
 
-.promo__desc-blockquote {
-  font-weight: 700;
-  color: orange;
-}
-
-.promo__desc-text {
-  color: hotpink;
-  background-color: $white;
-}
-
-a {
-  transition: all 0.5s ease-in-out;
-}
+//gGlobal
+@import "global/normalize";

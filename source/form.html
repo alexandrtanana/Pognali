@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Направления</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="boby">
@@ -96,16 +97,16 @@
             Маршрут</b>
           <p>Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
           <div class="form__route-wraper">
-            <select class="form__route-select" name="select" id="">
+            <select class="form__route-select" name="select" id="route1">
               <option class="form__route-option" value="Босния и Герцеговина ">Босния и Герцеговина</option>
             </select>
-            <select class="form__route-select" name="select" id="">
-              <option class="form__route-option" value=Чехия ">Чехия</option>
+            <select class="form__route-select" name="select" id="route2">
+              <option class="form__route-option" value="Чехия">Чехия</option>
             </select>
-            <select class=" form__route-select" name=" select" id="">
+            <select class=" form__route-select" name=" select" id="route3">
               <option class="form__route-option" value="Выберите страну">Выберите страну</option>
             </select>
-            <select class="form__route-select" name="select" id="">
+            <select class="form__route-select" name="select" id="route4">
               <option class="form__route-option" value="Выберите страну">Добавьте страну</option>
             </select>
           </div>
@@ -123,9 +124,9 @@
           </div>
           <div class="form__entertainment-container">
             <b class="form__entertainment-country">Босния и Герцеговина</b>
-            <input class="form__entertainment-input" type="textarea">
+            <textarea class="form__entertainment-textarea" name="action-plan" placeholder="План действий"></textarea>
             <b class="form__entertainment-country">Чехия</b>
-            <input class="form__entertainment-input" type="textarea">
+            <textarea class="form__entertainment-input" name="action-plan" placeholder="План действий"></textarea>
             <div class="form__button-container">
               <button class="form__button-next" type="button">Следующий шаг</button>
               <button class="form__button-back" type="button">На шаг назад</button>
@@ -137,7 +138,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__logo">
-      <a class="page-footer__logo" page-footer__logo href="#"><img src="img/icon/lobo-mobile.png"
+      <a class="page-footer__logo-link"  href="#"><img src="img/icon/lobo-mobile.png"
           alt="логотип погнали"></a>
     </div>
     <div class="page-footer__social">
