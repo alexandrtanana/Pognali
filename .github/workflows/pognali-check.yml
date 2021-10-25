@@ -24,4 +24,5 @@ jobs:
         npm ci
     - name: Run checks
       run: |
-        npm test
+        gulp cssLint
+        gulp htmlLint
