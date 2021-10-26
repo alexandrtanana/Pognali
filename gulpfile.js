@@ -69,19 +69,6 @@ const htmlLint = () => {
 };
 exports.htmlLint = htmlLint;
 
-// // Test(для экшена)
-// const test = () => {
-//   return gulp.src("source/**/*{.scss, .html}")
-//   .pipe(w3cjs())
-//   .pipe(gulpStylelint({
-//     reporters: [
-//       {formatter: 'string', console: true}
-//     ]
-//   }))
-// }
-
-// exports.test = test;
-
 // Scripts
 
 const scripts = () => {
