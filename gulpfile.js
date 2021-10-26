@@ -41,19 +41,17 @@ const styles = () => {
   .pipe(gulp.dest("source/css"))
   .pipe(sync.stream());
 }
-// const cssLint = () => {
-//   return gulp.src("source/sass/style.scss")
-//     .pipe(gulpStylelint({
-//       reporters: [
-//         {formatter: 'string', console: true}
-//       ]
-//     }));
-// }
+const cssLint = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(gulpStylelint({
+      reporters: [
+        {formatter: 'string', console: true}
+      ]
+    }));
+}
 
-// exports.cssLint = cssLint;
+exports.cssLint = cssLint;
 exports.styles = styles;
-
-
 
 
 // HTML
@@ -71,6 +69,18 @@ const htmlLint = () => {
 };
 exports.htmlLint = htmlLint;
 
+// // Test(для экшена)
+// const test = () => {
+//   return gulp.src("source/**/*{.scss, .html}")
+//   .pipe(w3cjs())
+//   .pipe(gulpStylelint({
+//     reporters: [
+//       {formatter: 'string', console: true}
+//     ]
+//   }))
+// }
+
+// exports.test = test;
 
 // Scripts
 
@@ -180,7 +190,7 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, server, watcher
+  styles, server, watcher,reload
 );
 
 
