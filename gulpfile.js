@@ -41,16 +41,16 @@ const styles = () => {
   .pipe(gulp.dest("source/css"))
   .pipe(sync.stream());
 }
-// const cssLint = () => {
-//   return gulp.src("source/sass/style.scss")
-//     .pipe(gulpStylelint({
-//       reporters: [
-//         {formatter: 'string', console: true}
-//       ]
-//     }));
-// }
+const cssLint = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(gulpStylelint({
+      reporters: [
+        {formatter: 'string', console: true}
+      ]
+    }));
+}
 
-// exports.cssLint = cssLint;
+exports.cssLint = cssLint;
 exports.styles = styles;
 
 
