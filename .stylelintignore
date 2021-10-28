@@ -1,4 +1,4 @@
 css/style.min.css
 sass/global/normalize.css
 build/css/style.min.css
-sass/global/resset.css
+source/sass/global/reset.css

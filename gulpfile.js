@@ -21,6 +21,11 @@ const del = require("del");
 
 const styles = () => {
   return gulp.src("source/sass/style.scss")
+  .pipe(gulpStylelint({
+    reporters: [
+      {formatter: 'string', console: true}
+    ]
+  }))
   // .pipe(plumber())
   .pipe(sourcemap.init())
   .pipe(sass())
