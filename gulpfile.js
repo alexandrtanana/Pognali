@@ -21,12 +21,7 @@ const del = require("del");
 
 const styles = () => {
   return gulp.src("source/sass/style.scss")
-      .pipe(gulpStylelint({
-        reporters: [
-          {formatter: 'string', console: true}
-        ]
-      }))
-  .pipe(plumber())
+  // .pipe(plumber())
   .pipe(sourcemap.init())
   .pipe(sass())
   .pipe(postcss([
@@ -41,16 +36,16 @@ const styles = () => {
   .pipe(gulp.dest("source/css"))
   .pipe(sync.stream());
 }
-const cssLint = () => {
-  return gulp.src("source/sass/style.scss")
-    .pipe(gulpStylelint({
-      reporters: [
-        {formatter: 'string', console: true}
-      ]
-    }));
-}
+// const cssLint = () => {
+//   return gulp.src("source/sass/style.scss")
+//     .pipe(gulpStylelint({
+//       reporters: [
+//         {formatter: 'string', console: true}
+//       ]
+//     }));
+// }
 
-exports.cssLint = cssLint;
+// exports.cssLint = cssLint;
 exports.styles = styles;
 
 
