@@ -1,0 +1,54 @@
+.promo__section {
+  background-color: $dark-blue;
+  color: $white;
+}
+.promo-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.promo__authorization {
+  background-color: $dark-blue;
+}
+
+.promo__authorization-number {
+  color: $white;
+}
+
+.promo__authorization-email {
+  color: $white;
+}
+
+.promo__authorization-link {
+  color: $white;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.promo__desc {
+  background-color: $dark-blue;
+}
+
+.promo__desc-blockquote {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+}
+
+.promo__desc-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+}
+
+.promo__item-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: $dark-blue;
+}
