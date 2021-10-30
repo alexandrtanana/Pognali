@@ -1,3 +1,10 @@
 .page-header {
   background-color: $dark-blue;
 }
+
+.page-header__section-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  color: $white;
+}

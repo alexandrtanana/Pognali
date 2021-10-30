@@ -5,8 +5,8 @@ const sass = require("gulp-sass")(require('sass'));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
-const gulpStylelint = require('gulp-stylelint');
-const w3cjs = require('gulp-w3cjs');
+const gulpStylelint = require("gulp-stylelint");
+const w3cjs = require("gulp-w3cjs");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
@@ -42,7 +42,7 @@ const styles = () => {
   .pipe(sync.stream());
 }
 const cssLint = () => {
-  return gulp.src("source/sass/style.scss")
+  return gulp.src("source/sass/**/*.scss")
     .pipe(gulpStylelint({
       reporters: [
         {formatter: 'string', console: true}

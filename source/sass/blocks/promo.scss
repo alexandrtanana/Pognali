@@ -1,10 +1,11 @@
 .promo__section {
-  background-color: $dark-blue;
   color: $white;
+  background-color: $dark-blue;
 }
+
 .promo-title {
-  font-weight: 700;
   font-size: 36px;
+  font-weight: 700;
   line-height: 40px;
 }
 
@@ -21,10 +22,10 @@
 }
 
 .promo__authorization-link {
-  color: $white;
-  font-weight: 700;
   font-size: 17px;
+  font-weight: 700;
   line-height: 20px;
+  color: $white;
   text-decoration: none;
 }
 
@@ -33,22 +34,22 @@
 }
 
 .promo__desc-blockquote {
-  font-weight: 300;
   font-size: 16px;
+  font-weight: 300;
   line-height: 22px;
   color: $white;
 }
 
 .promo__desc-text {
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 22px;
   color: $white;
 }
 
 .promo__item-text {
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 18px;
   color: $dark-blue;
 }
