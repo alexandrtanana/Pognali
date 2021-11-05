@@ -78,7 +78,7 @@ const scripts = () => {
   return gulp.src("source/js/script.js")
     .pipe(terser())
     .pipe(rename("script.min.js"))
-    .pipe(gulp.dest("build/js"))
+    .pipe(gulp.dest("source/js"))
     .pipe(sync.stream());
 }
 
@@ -130,6 +130,7 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/css/*.css",
+    "source/js/script.min.js",
     "source/*.ico",
     "source/img/**/*",
     "!source/img/icons/*.svg",

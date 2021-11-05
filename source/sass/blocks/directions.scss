@@ -1,13 +1,31 @@
+.directions {
+  min-height: 1022px;
+}
+
+.directions__wraper {
+  margin-top: 72px;
+}
+
+.directions__container {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .directions__title {
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+  color: #FF8D30;
+  margin-top: 71px;
 }
 
 .directions__text {
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+  color: #444444;
+  margin-top: 19px;
+  width: 216px;
 }
 
 .directions__country-country {

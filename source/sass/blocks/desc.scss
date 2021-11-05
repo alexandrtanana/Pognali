@@ -1,17 +1,40 @@
+.desc {
+  background-color: #192144;
+  border-radius: 0 0 35px 35px;
+}
+
+.desc__container {
+  background-image: url("..//img/background-service-mobile.png");
+  background-repeat: no-repeat;
+  height: 353px;
+  margin: 0 auto;
+}
+
+.desc__wraper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .desc__title {
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+  color: #FF8D30;
+  width: 110px;
 }
 
 .desc__lead {
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+  color: $white;
+  width: 211px;
 }
 
 .desc__text {
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
+  color: $white;
+  width: 202px;
 }

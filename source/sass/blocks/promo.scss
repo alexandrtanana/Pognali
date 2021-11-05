@@ -1,36 +1,54 @@
 .promo__section {
   color: $white;
-  background-color: $dark-blue;
+  background-image: url("..//img/global-background-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 477px;
+
 }
 
-.promo-title {
+.promo__title {
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
+  text-align: center;
+  width: 243px;
+  margin: 0 auto;
+  padding-top: 60px;
+
+}
+
+.promo__img {
+  position: relative;
+  top: 42px;
+  left: 83px;
 }
 
 .promo__authorization {
-  background-color: $dark-blue;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
 }
 
 .promo__authorization-number {
-  color: $white;
+  background-color: #FF8D30;
 }
 
 .promo__authorization-email {
-  color: $white;
+  background-color: #FFBD30;
 }
 
 .promo__authorization-link {
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
-  color: $white;
+  color: $dark-blue;
+  background-color: #FFD74B;
   text-decoration: none;
 }
 
 .promo__desc {
   background-color: $dark-blue;
+  min-height: 285px;
 }
 
 .promo__desc-blockquote {
@@ -38,6 +56,8 @@
   font-weight: 300;
   line-height: 22px;
   color: $white;
+  width: 151px;
+  margin: 0 auto;
 }
 
 .promo__desc-text {
@@ -45,6 +65,36 @@
   font-weight: 700;
   line-height: 22px;
   color: $white;
+  width: 161px;
+  margin: 0 auto;
+}
+
+.promo__list {
+  background-color: #192144;
+}
+
+.promo__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 270px;
+  margin: 0 auto;
+}
+
+.promo__item:first-child {
+  background-color: #FF8D30;
+}
+
+.promo__item:nth-child(2) {
+  background-color: #FFA530;
+}
+
+.promo__item:nth-child(3) {
+ background-color: #FFBD30;
+}
+
+.promo__item:last-child {
+  background-color: #FFD74B;
 }
 
 .promo__item-text {
@@ -52,4 +102,9 @@
   font-weight: 700;
   line-height: 18px;
   color: $dark-blue;
+  width: 185px;
+}
+
+.promo__item-text-number {
+  color: $white;
 }
