@@ -1,0 +1,43 @@
+.desc {
+  background-color: #192144;
+  border-radius: 0 0 35px 35px;
+}
+
+.desc__container {
+  width: 100%;
+  height: 353px;
+  margin: 0 auto;
+  background-image: url("..//img/background-service-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.desc__wraper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.desc__title {
+  width: 110px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ff8d30;
+}
+
+.desc__lead {
+  width: 211px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  color: $white;
+}
+
+.desc__text {
+  width: 202px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  color: $white;
+}

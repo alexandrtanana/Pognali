@@ -1,0 +1,52 @@
+.tarifs {
+  position: relative;
+  z-index: 3;
+  margin-top: -30px;
+  background-color: #e6e8f1;
+  border-radius: 0 0 30px 30px;
+}
+
+.tarifs__container {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.tarifs__title {
+  display: flex;
+  width: 107px;
+  padding-top: 106px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ff8d30;
+}
+
+.tarifs__list {
+  padding-top: 44px;
+}
+
+.tarifs__item-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 270px;
+  padding-bottom: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #444;
+  border: 1px solid #e1e3e9;
+}
+
+.tarifs__link {
+  display: flex;
+  width: 219px;
+  padding-top: 46px;
+  padding-right: 25px;
+  padding-bottom: 38px;
+  padding-left: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #132576;
+}

@@ -35,7 +35,8 @@
     "gulp": "gulp",
     "gulp cssLint": "gulp-stylelint",
     "gulp htmlLint": "w3cjs",
-    "test": "gulp htmlLint && gulp cssLint"
+    "test": "gulp cssLint && gulp htmlLint"
+
   },
   "repository": {
     "type": "git",
