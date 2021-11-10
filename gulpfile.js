@@ -42,6 +42,7 @@ const styles = () => {
   .pipe(sync.stream());
 }
 const cssLint = () => {
+
   return gulp.src("source/sass/**/*.scss")
     .pipe(gulpStylelint({
       reporters: [
@@ -54,8 +55,6 @@ exports.cssLint = cssLint;
 exports.styles = styles;
 
 
-
-
 // HTML
 
 const html = () => {
@@ -64,11 +63,11 @@ const html = () => {
     .pipe(gulp.dest("build"));
 }
 
-
 const htmlLint = () => {
     return gulp.src('source/*.html')
         .pipe(w3cjs())
 };
+
 exports.htmlLint = htmlLint;
 
 
@@ -83,6 +82,7 @@ const scripts = () => {
 }
 
 exports.scripts = scripts;
+
 
 // Images
 
@@ -101,6 +101,7 @@ const copyImages = () => {
 
 exports.images = copyImages;
 
+
 // WebP
 
 const createWebp = () => {
@@ -110,6 +111,7 @@ const createWebp = () => {
 }
 
 exports.createWebp = createWebp;
+
 
 // Sprite
 
@@ -123,6 +125,7 @@ const sprite = () => {
 }
 
 exports.sprite = sprite;
+
 
 // Copy
 
@@ -143,11 +146,13 @@ const copy = (done) => {
 
 exports.copy = copy;
 
+
 // Clean
 
 const clean = () => {
   return del("build");
 };
+
 
 // Server
 
@@ -165,12 +170,14 @@ const server = (done) => {
 
 exports.server = server;
 
+
 // Reload
 
 const reload = (done) => {
   sync.reload();
   done();
 }
+
 
 // Watcher
 
@@ -181,9 +188,8 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, server, watcher
+  styles, server, watcher,reload
 );
-
 
 
 
@@ -205,8 +211,8 @@ const build = gulp.series(
 
 exports.build = build;
 
-// Default
 
+// Default
 
 exports.default = gulp.series(
   clean,
