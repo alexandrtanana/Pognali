@@ -1,2 +1,2 @@
-css/style.min.css
-sass/global/normalize.css
+global\normalize.css
+build\css\style.min.css
