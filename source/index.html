@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -14,7 +14,7 @@
     <nav class="page-header__nav">
       <div class="page-header__nav-menu">
         <a class="page-header__nav-link" href="#"><img src="img/icon/lobo-mobile.png" alt="логотип погнали"></a>
-        <button class="page-header__nav-button">Бургер</button>
+        <button class="page-header__nav-button page-header__nav-button-closed page-header__nav-button-opened "></button>
       </div>
     </nav>
   </header>
@@ -22,8 +22,7 @@
     <div class="promo">
       <section class="promo__section">
         <h1 class="promo__title">В путешествие с крутыми попутчиками!</h1>
-        <img class="promo__img" src="img/traveller-illustration-mobile.svg" width="192" height="255"
-          alt="путешественник">
+        <div class="promo__section-image"></div>
       </section>
       <div class="promo__authorization">
         <a class="promo__authorization-number" href="tel:88005558628"><img src="img/icon/telephone-index-icon.svg"
@@ -53,15 +52,16 @@
         </ul>
       </div>
       <div class="desc">
-          <div class="desc__container">
-            <div class="desc__wraper">
-              <b class="desc__title">О сервисе</b>
-              <p class="desc__lead">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими
-                идеями путешествий
-                и черпайте вдохновение в чужих.</p>
-              <b class="desc__text">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b>
-            </div>
+        <div class="desc__container">
+          <div class="desc__wraper">
+            <b class="desc__title">О сервисе</b>
+            <p class="desc__lead">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь
+              своими
+              идеями путешествий
+              и черпайте вдохновение в чужих.</p>
+            <b class="desc__text">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b>
           </div>
+        </div>
       </div>
     </div>
     <div class="directions">
@@ -75,54 +75,96 @@
         </div>
         <div class="directions__container">
           <div class="directions__country">
-            <img src="img/thailand-mobile.jpg" width="270" height="110" alt="тайланд">
-            <b class="directions__country-country">Таиланд</b>
-            <p class="directions__country-text">Джунгли зовут</p>
+            <img src="img/thailand-mobile.png" width="270" height="110" alt="тайланд">
+            <div class="directions__country-wrap">
+              <div class="directions__country-desc">
+                <b class="directions__country-country">Таиланд</b>
+                <p class="directions__country-text">Джунгли зовут</p>
+              </div>
+              <div class="directions__country-visitors">
+                <img src="img/icon/Vector.svg" width="11" height="12" alt="посетители">
+                <p class="directions__country-visitors-number">18321</p>
+              </div>
+            </div>
           </div>
           <div class="directions__country">
-            <b class="directions__country-country">Франия</b>
-            <p class="directions__country-text">Трэ бьен, манифик!</p>
+            <img src="img/france-mobile.png" width="270" height="110" alt="франция">
+            <div class="directions__country-wrap">
+              <div class="directions__country-desc">
+                <b class="directions__country-country">Франия</b>
+                <p class="directions__country-text">Трэ бьен, манифик!</p>
+              </div>
+              <div class="directions__country-visitors">
+                <img src="img/icon/Vector.svg" width="11" height="12" alt="посетители">
+                <p class="directions__country-visitors-number">12518</p>
+              </div>
+            </div>
           </div>
           <div class="directions__country">
-            <b class="directions__country-country">Чехия</b>
-            <p class="directions__country-text">Закоулки старой Европы</p>
+            <img src="img/czech-mobile.png" width="270" height="110" alt="чехия">
+            <div class="directions__country-wrap">
+              <div class="directions__country-desc">
+                <b class="directions__country-country">Чехия</b>
+                <p class="directions__country-text">Закоулки старой Европы</p>
+              </div>
+              <div class="directions__country-visitors">
+                <img src="img/icon/Vector.svg" width="11" height="12" alt="посетители">
+                <p class="directions__country-visitors-number">5326</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="directions__link">
           <a class="directions__link-link" href="form.html">Показать все</a>
+          <img class="directions__link-img" src="img/icon/show-directions.svg" width="13" height="13"
+            alt="показать направления">
         </div>
       </div>
     </div>
     <div class="users">
       <div class="users__container">
-        <b class="users__title">Попутчики</b>
-        <p class="users__lead">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и
-          коктейль, а другому
-          маршрут для хайкинга.
-        </p>
-        <b class="users__text">Теперь можно легко найти
-          единомышленников!</b>
-      </div>
-      <div class="users__wraper">
-        <div class="users__cart">
-          <b class="users__name">Таня Фирсова</b>
-          <a class="users__hashtag" href="">#Зож</a>
-          <a class="users__hashtag" href="">#пп</a>
-          <a class="users__hashtag" href="">#Фитнес</a>
-          <a class="users__hashtag" href="">#пляж</a>
-          <a class="users__hashtag" href="">#авокадо</a>
-          <a class="users__hashtag" href="">#смузи</a>
+        <div class="users__wraper">
+          <b class="users__title">Попутчики</b>
+          <p class="users__lead">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и
+            коктейль, а другому
+            маршрут для хайкинга.
+          </p>
+          <b class="users__text">Теперь можно легко найти
+            единомышленников!</b>
         </div>
-        <div class="users__cart">
-          <b class="users__name">Петя Дёмин</b>
-          <a class="users__hashtag" href="">#бургер</a>
-          <a class="users__hashtag" href="">#бар</a>
-          <a class="users__hashtag" href="">#футбол</a>
-          <a class="users__hashtag" href="">#концерт</a>
-          <a class="users__hashtag" href="">#крафт</a>
-        </div>
-        <div class="users__link">
-          <a class="users__link-link" href="catalog.html">Показать всех</a>
+        <div class="users__wraper">
+          <div class="users__cart">
+            <img src="img/firsova-desktop.png" width="270" height="270" alt="Таня Фирсова">
+            <div class="users__cart-wrap">
+              <b class="users__name">Таня Фирсова</b>
+              <div class="users__cart-container">
+                <a class="users__hashtag" href="">#Зож</a>
+                <a class="users__hashtag" href="">#пп</a>
+                <a class="users__hashtag" href="">#Фитнес</a>
+                <a class="users__hashtag" href="">#пляж</a>
+                <a class="users__hashtag" href="">#авокадо</a>
+                <a class="users__hashtag" href="">#смузи</a>
+              </div>
+            </div>
+          </div>
+          <div class="users__cart">
+            <img src="img/demin-desktop.png" width="270" height="270" alt="Петя Дёмин">
+            <div class="users__cart-wrap">
+              <b class="users__name">Петя Дёмин</b>
+              <div class="users__cart-container">
+                <a class="users__hashtag" href="">#бургер</a>
+                <a class="users__hashtag" href="">#бар</a>
+                <a class="users__hashtag" href="">#футбол</a>
+                <a class="users__hashtag" href="">#концерт</a>
+                <a class="users__hashtag" href="">#крафт</a>
+              </div>
+            </div>
+          </div>
+          <div class="users__link">
+            <a class="users__link-link" href="catalog.html">Показать всех</a>
+            <img class="users__link-img" src="img/icon/show-directions.svg" width="13" height="13"
+              alt="показать всех попутчиков">
+          </div>
         </div>
       </div>
     </div>
@@ -131,54 +173,66 @@
         <b class="tarifs__title">Добавьте свой профиль</b>
         <ul class="tarifs__list">
           <li class="tarifs__item">
-            <p class="tarifs__item-text">Базовое размещение<br>Бесплатно</p><span>1</span>
+            <p class="tarifs__item-text">Базовое размещение<br>Бесплатно<span class="tarifs__item-text-number1">1</span>
+            </p>
           </li>
           <li class="tarifs__item">
-            <p class="tarifs__item-text">Вывод на первых позициях<br>99 руб./мес</p><span>2</span>
+            <p class="tarifs__item-text">Вывод на первых позициях<br>99 руб./мес<span
+                class="tarifs__item-text-number2">2</span></p>
           </li>
           <li class="tarifs__item">
-            <p class="tarifs__item-text">Кастомный цвет карточки<br>59 руб./мес</p><span>3</span>
+            <p class="tarifs__item-text">Кастомный цвет карточки<br>59 руб./мес<span
+                class="tarifs__item-text-number3">3</span></p>
           </li>
         </ul>
         <a class="tarifs__link">Показать тарифы для бизнеса</a>
       </div>
     </div>
     <div class="feedback">
-      <div class="feedback__container">
-        <b class="feedback__title">Заинтересовались?</b>
-        <p class="feedback__desc">Зарегистрируйтесь, это быстро и бесплатно!
-          Уже зарегистрированы? Тогда скорее <a href="#">авторизуйтесь</a>.</p>
-      </div>
-      <div class="feedback__email">
-        <form class="feedback__email-form" action="https://echo.htmlacademy.ru" method="POST">
-          <input class="feedback__email-input" type="email" name="email" id="email" placeholder="E-mail">
-          <button class="feedback__email-button" type="submit" value="Отправить форму">Отправить форму</button>
-        </form>
-      </div>
-      <div class="feedback__aside">
-        <p class="feedback__aside-text">Остались вопросы?
-          Мы с радостью на них ответим!</p>
-        <a class="feedback__aside-telephone" href="tel:88005558628">8 800 555-86-28</a>
-        <a class="feedback__aside-email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <div class="feedback__wrap">
+        <div class="feedback__container">
+          <b class="feedback__title">Заинтересовались?</b>
+          <p class="feedback__desc">Зарегистрируйтесь, это быстро и бесплатно!
+            Уже зарегистрированы? Тогда скорее <a class="feedback__desc-link" href="#">авторизуйтесь</a>.</p>
+        </div>
+        <div class="feedback__email">
+          <form class="feedback__email-form" action="https://echo.htmlacademy.ru" method="POST">
+            <input class="feedback__email-input" type="email" name="email" id="email" placeholder="E-mail">
+            <button class="feedback__email-button" type="submit" value="Отправить форму"><img
+                class="feedback__email-img" src="img/icon/show-directions.svg" width="13" height="13" alt="отправить емейл"></button>
+          </form>
+        </div>
+        <div class="feedback__aside">
+          <p class="feedback__aside-text">Остались вопросы?<br>
+            Мы с радостью на них ответим!</p>
+          <div class="feedback__aside-wrap">
+            <a class="feedback__aside-telephone" href="tel:88005558628">8 800 555-86-28</a>
+            <a class="feedback__aside-email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="location">
       <p class="location__adress">ул. Большая Конюшенная, 19/8</p>
-      <button class="location__button">Проложить маршрут</button>
+      <button class="location__button">Проложить маршрут <img class="location__button-img"
+          src="img/icon/show-directions.svg" width="13" height="13" alt="показать всех попутчиков"></button>
     </div>
+    <div class="map"></div>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__logo">
-      <a class="page-footer__logo-link" href="#"><img src="img/icon/lobo-mobile.png" alt="логотип погнали"></a>
-    </div>
-    <div class="page-footer__social">
-      <a class="page-footer__social-facebook" href="#">Facebook</a>
-      <a class="page-footer__social-vk" href="#">Vk</a>
-      <a class="page-footer__social-instagram" href="#">Instagramm</a>
-    </div>
-    <div class="copyright">
-      <span class="copyright__text">Разработано</span>
-      <a class="copyright__link" href="#">LOGO HTML</a>
+    <div class="page-footer__wrap">
+      <div class="page-footer__logo">
+        <a class="page-footer__logo-link" href="#"><img src="img/icon/logo-footer.svg" alt="логотип погнали"></a>
+      </div>
+      <div class="page-footer__social">
+        <a class="page-footer__social-facebook" href="#"></a>
+        <a class="page-footer__social-vk" href="#"></a>
+        <a class="page-footer__social-instagram" href="#"></a>
+      </div>
+      <div class="copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="htmlacademy.ru/intensive/adaptive"></a>
+      </div>
     </div>
   </footer>
   <script src="js/script.min.js"></script>

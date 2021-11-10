@@ -4,10 +4,13 @@
 }
 
 .desc__container {
-  background-image: url("..//img/background-service-mobile.png");
-  background-repeat: no-repeat;
+  width: 100%;
   height: 353px;
   margin: 0 auto;
+  background-image: url("..//img/background-service-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .desc__wraper {
@@ -16,25 +19,25 @@
 }
 
 .desc__title {
+  width: 110px;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
-  color: #FF8D30;
-  width: 110px;
+  color: #ff8d30;
 }
 
 .desc__lead {
+  width: 211px;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
   color: $white;
-  width: 211px;
 }
 
 .desc__text {
+  width: 202px;
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
   color: $white;
-  width: 202px;
 }

@@ -4,7 +4,19 @@
 
 .page-header__nav-menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 270px;
   padding-top: 19px;
   padding-bottom: 19px;
+  margin: 0 auto;
+}
+
+.page-header__nav-button-closed {
+  width: 25px;
+  height: 11px;
+  background-color: $dark-blue;
+  background-image: url("..//img/icon/burgermenu-closed-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
 }
