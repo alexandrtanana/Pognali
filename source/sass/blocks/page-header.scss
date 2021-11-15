@@ -2,6 +2,15 @@
   background-color: $dark-blue;
 }
 
+.page-header-internal {
+  background-color: #ffd74b;
+}
+
+.page-header__container {
+  border-radius: 0 0 20px 20px;
+  background-color: $dark-blue;
+}
+
 .page-header__nav-menu {
   display: flex;
   justify-content: space-between;
@@ -19,4 +28,18 @@
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+}
+
+.page-header__section {
+  width: 270px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 9px;
+}
+
+.page-header__section-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  color: $white;
 }

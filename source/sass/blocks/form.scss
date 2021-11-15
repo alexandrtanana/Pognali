@@ -1,43 +1,114 @@
+.form {
+  background-color: #d4d9eb;
+  border-radius: 30px 30px 0 0;
+  margin-top: -25px;
+  margin-bottom: -25px;
+}
+
+.form__wrap {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin: 0 auto;
+}
+
 .form__title {
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+  color: #1d2e5b;
 }
 
-.form__subtitle {
+.form__date {
+  background-color: $white;
+  border-radius: 10px;
+}
+
+.form__date-subtitle {
+  display: flex;
+  padding-top: 24px;
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
+  color: #1d2e5b;
 }
 
-.form__subtitle-desc {
+.form__date-subtitle-desc {
+  margin-top: 16px;
+  margin-bottom: 20px;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  color: #444;
+}
+
+.form__wraper {
+  width: 220px;
+  margin: 0 auto;
+}
+
+.form__date-container {
+  margin-top: 20px;
+}
+
+.form__date-people {
+  display: flex;
+  justify-content: space-between;
 }
 
 .form__date-search {
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
+  color: #1d2e5b;
 }
 
 .form__date-search-people {
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
+  color: #1d2e5b4b;
+}
+
+.form__people-input {
+  margin-top: 8px;
+  height: 43px;
+  width: 220px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}
+
+.form__date-day {
+  display: flex;
+  justify-content: space-between;
 }
 
 .form__date-duration {
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
+  color: #1d2e5b;
 }
 
 .form__date-duration-day {
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
+  color: #1d2e5b4b;
+}
+
+.form__day-input {
+  margin-top: 8px;
+  height: 43px;
+  width: 220px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}
+
+.form__child {
+  margin-top: 28px;
 }
 
 .form__child-label {
@@ -46,22 +117,61 @@
   line-height: 15px;
 }
 
+.form__calendar {
+  margin-top: 28px;
+}
+
 .form__button-next {
+  padding-top: 7px;
+  padding-left: 42px;
+  padding-right: 41px;
+  padding-bottom: 7px;
+  text-transform: uppercase ;
+  margin-bottom: 23px;
+  margin-top: 22px;
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ffd74b;
+  color: #1d2e5b;
 }
 
-.form__route-route {
+.form__route {
+  margin-top: 10px;
+  background-color: $white;
+  border-radius: 10px;
+}
+
+.form__route-subtitle {
+  display: flex;
+  padding-top: 23px;
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
+  color: #1d2e5b;
 }
 
-.form__route-desc {
+.form__route-subtitle-desc {
+  margin-top: 15px;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  color: #444;
+}
+
+.form__route-wraper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__route-select {
+  margin-bottom: 22px;
+  height: 42px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  color: #1d2e5b;
 }
 
 .form__route-option {
@@ -70,26 +180,66 @@
   line-height: 18px;
 }
 
+.form__button-container {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  margin: 0;
+}
+
 .form__button-back {
+  text-transform: uppercase ;
+  margin-bottom: 9px;
+  margin-top: 13px;
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ffd84b00;
+  color: #1d2e5b;
 }
 
-.form__entertainment-text {
+.form__entertainment {
+  margin-top: 10px;
+  margin-bottom: 60px;
+  background-color: $white;
+  border-radius: 10px;
+}
+
+.form__entertainment-subtitle {
+  display: flex;
+  padding-top: 23px;
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
+  color: #1d2e5b;
 }
 
-.form__entertainment-desc {
+.form__entertainment-subtitle-desc {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  color: #444;
+  margin-top: 15px;
+}
+
+.form__entertainment-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__entertainment-country {
+  margin-top: 27px;
+  margin-bottom: 18px;
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
+  color: #1d2e5b;
+}
+
+.form__entertainment-textarea {
+  height: 220px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
 }

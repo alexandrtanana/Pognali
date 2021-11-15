@@ -1,3 +1,24 @@
+.userblock {
+  background-color: #edeff6;
+  padding-bottom: 40px;
+}
+
+.userblock__container {
+  display: flex;
+  justify-content: space-around;
+  width: 270px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+
+.userblock__level {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px solid #FF8D30;
+}
+
 .userblock__desc {
   font-size: 38px;
   font-weight: 700;
@@ -11,15 +32,48 @@
 }
 
 .userblock__button {
+  display: flex;
+  width: 270px;
+  padding-right: 67px;
+  padding-left: 67px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 0 auto;
   font-size: 20px;
   font-weight: 500;
   line-height: 18px;
+  background-color: #dfe3f0;
+  border-radius: 30px;
+  border: none;
 }
+
+.userblock__block {
+  width: 270px;
+  margin: 0 auto;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.userblock__block-container {
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 
 .userblock__block legend {
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
+  text-align: center;
+  color: #1d2e5b;
+}
+
+.userblock__block-container-icon {
+  display: flex;
+  justify-content: center;
 }
 
 .userblock__hashtag {
@@ -27,4 +81,14 @@
   font-weight: 400;
   line-height: 18px;
   text-decoration: none;
+  color: #444;
+}
+
+.userblock__icon {
+  background-color: $white;
+  clip-path: circle(50% at 50% 50%);
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }

@@ -10,7 +10,7 @@
 // Italic
 @font-face {
   font-family: "BloggerSans";
-  font-weight: 400;
+  font-weight: normal;
   src:
     local("BloggerSans Bold"),
     url("../fonts/bloggersans-italic.woff") format("woff"),
@@ -30,7 +30,7 @@
 // Bold - Italic
 @font-face {
   font-family: "BloggerSans";
-  font-weight: 700;
+  font-weight: normal;
   src:
     local("BloggerSans Bold"),
     url("../fonts/bloggersans-bolditalic.woff") format("woff"),
@@ -50,7 +50,7 @@
 // Light - Italic
 @font-face {
   font-family: "BloggerSans";
-  font-weight: 300;
+  font-weight: normal;
   src:
     local("BloggerSans Bold"),
     url("../fonts/bloggersans-lightitalic.woff") format("woff"),
@@ -70,7 +70,7 @@
 // Medium - Italic
 @font-face {
   font-family: "BloggerSans";
-  font-weight: 500;
+  font-weight: normal;
   src:
     local("BloggerSans Bold"),
     url("../fonts/bloggersans-mediumitalic.woff") format("woff"),
