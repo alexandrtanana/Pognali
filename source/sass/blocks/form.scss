@@ -1,8 +1,8 @@
 .form {
-  background-color: #d4d9eb;
-  border-radius: 30px 30px 0 0;
   margin-top: -25px;
   margin-bottom: -25px;
+  background-color: #d4d9eb;
+  border-radius: 30px 30px 0 0;
 }
 
 .form__wrap {
@@ -73,9 +73,9 @@
 }
 
 .form__people-input {
-  margin-top: 8px;
-  height: 43px;
   width: 220px;
+  height: 43px;
+  margin-top: 8px;
   border: 1px solid #cbced9;
   border-radius: 4px;
 }
@@ -100,9 +100,9 @@
 }
 
 .form__day-input {
-  margin-top: 8px;
-  height: 43px;
   width: 220px;
+  height: 43px;
+  margin-top: 8px;
   border: 1px solid #cbced9;
   border-radius: 4px;
 }
@@ -123,19 +123,19 @@
 
 .form__button-next {
   padding-top: 7px;
-  padding-left: 42px;
   padding-right: 41px;
   padding-bottom: 7px;
-  text-transform: uppercase ;
-  margin-bottom: 23px;
+  padding-left: 42px;
   margin-top: 22px;
+  margin-bottom: 23px;
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
-  border-radius: 20px;
-  border: none;
-  background-color: #ffd74b;
   color: #1d2e5b;
+  text-transform: uppercase;
+  background-color: #ffd74b;
+  border: none;
+  border-radius: 20px;
 }
 
 .form__route {
@@ -167,11 +167,11 @@
 }
 
 .form__route-select {
-  margin-bottom: 22px;
   height: 42px;
+  margin-bottom: 22px;
+  color: #1d2e5b;
   border: 1px solid #cbced9;
   border-radius: 4px;
-  color: #1d2e5b;
 }
 
 .form__route-option {
@@ -188,16 +188,16 @@
 }
 
 .form__button-back {
-  text-transform: uppercase ;
-  margin-bottom: 9px;
   margin-top: 13px;
+  margin-bottom: 9px;
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
-  border-radius: 20px;
-  border: none;
-  background-color: #ffd84b00;
   color: #1d2e5b;
+  text-transform: uppercase;
+  background-color: #ffd84b00;
+  border: none;
+  border-radius: 20px;
 }
 
 .form__entertainment {
@@ -217,11 +217,11 @@
 }
 
 .form__entertainment-subtitle-desc {
+  margin-top: 15px;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   color: #444;
-  margin-top: 15px;
 }
 
 .form__entertainment-container {
