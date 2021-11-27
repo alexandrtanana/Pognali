@@ -1,23 +1,61 @@
+.plans {
+  display: flex;
+  flex-direction: column;
+  margin-top: -22px;
+  background-color: #dfe3f0;
+  border-radius: 30px 30px 0 0;
+}
+
+.plans__wraper {
+  width: 270px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
 .plans__title {
+  display: flex;
+  margin-top: 28px;
+  margin-bottom: 29px;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+  color: #1d2e5b;
+}
+
+.plans__container {
+  display: flex;
+  flex-direction: column;
+  padding-right: 23px;
+  padding-left: 23px;
+  margin-bottom: 10px;
+  background-color: $white;
+  border-radius: 10px;
 }
 
 .plans__сountry {
+  margin-top: 24px;
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
+  color: #1d2e5b;
 }
 
 .plans__companion {
+  margin-top: 20px;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
+  color: #1d2e5b;
 }
 
 .plans__button {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 23px;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
+  color: #0000007e;
+  background-color: #0000;
+  border: none;
 }

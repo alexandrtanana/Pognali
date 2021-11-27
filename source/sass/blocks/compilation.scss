@@ -1,13 +1,50 @@
+.compilation {
+  padding-top: 40px;
+  margin-top: -20px;
+  background-color: #f2f2f2;
+}
+
+.compilation__form {
+  width: 270px;
+  margin: 0 auto;
+  margin-top: 21px;
+  margin-bottom: 28px;
+  background-color: #ffd74b;
+  border-radius: 20px;
+}
+
+.compilation__form-container {
+  width: 220px;
+  margin: 0 auto;
+}
+
 .compilation__desc {
+  padding-top: 26px;
+  padding-bottom: 23px;
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
+  color: #1d2e5b;
+}
+
+.compilation__hobby {
+  padding-bottom: 14px;
+  border-top: 1px solid #f3c72b;
 }
 
 .compilation__hobby-desc {
+  padding-top: 12px;
+  padding-bottom: 14px;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
+  color: #1d2e5b;
+  text-transform: uppercase;
+}
+
+.compilation__hobby-list {
+  display: flex;
+  flex-direction: column;
 }
 
 .compilation__hobby-label {
@@ -16,10 +53,19 @@
   line-height: 20px;
 }
 
+.compilation__music {
+  padding-bottom: 14px;
+  border-top: 1px solid #f3c72b;
+}
+
 .compilation__music-desc {
+  padding-top: 12px;
+  padding-bottom: 14px;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
+  color: #1d2e5b;
+  text-transform: uppercase;
 }
 
 .compilation__music-label {
@@ -28,10 +74,19 @@
   line-height: 20px;
 }
 
+.compilation__food {
+  padding-bottom: 14px;
+  border-top: 1px solid #f3c72b;
+}
+
 .compilation__food-desc {
+  padding-top: 12px;
+  padding-bottom: 14px;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
+  color: #1d2e5b;
+  text-transform: uppercase;
 }
 
 .compilation__food-label {
@@ -40,20 +95,133 @@
   line-height: 20px;
 }
 
-.compilation__transport-desc {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 18px;
+.compilation__transport {
+  border-top: 1px solid #f3c72b;
 }
 
-.compilation__level-desc {
+.compilation__transport-desc {
+  padding-top: 12px;
+  padding-bottom: 14px;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
+  color: #1d2e5b;
+  text-transform: uppercase;
+}
+
+.compilation__transport-list {
+  display: flex;
+  align-items: baseline;
+  justify-content: start;
+  padding-bottom: 14px;
 }
 
 .compilation__button {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 22px;
   font-size: 17px;
   font-weight: 700;
   line-height: 17px;
+}
+
+.compilation__transport-item {
+  width: 31px;
+  height: 31px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.compilation__transport-item:first-child {
+  background-image: url('..//img/icon/airplane-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.compilation__transport-item:nth-child(2) {
+  background-image: url('..//img/icon/auto-iconn.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.compilation__transport-item:nth-child(3) {
+  background-image: url('..//img/icon/bicycle-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.compilation__transport-item:last-child {
+  background-image: url('..//img/icon/run-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.compilation__transport-input {
+  display: none;
+}
+
+.compilation__level {
+  border-top: 1px solid #f3c72b;
+}
+
+.compilation__level-desc {
+  padding-top: 12px;
+  padding-bottom: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #1d2e5b;
+  text-transform: uppercase;
+}
+
+.compilation__level-list {
+  display: flex;
+  padding-bottom: 24px;
+}
+
+.compilation__level-item-min {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+  min-height: 35px;
+  color: #1d2e5b;
+  background-color: #fff;
+  border: 1px solid #cbced9;
+  border-radius: 4px 0 0 4px;
+}
+
+.compilation__level-item-max {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+  min-height: 35px;
+  color: #1d2e5b;
+  background-color: #fff;
+  border: 1px solid #cbced9;
+  border-radius: 0 4px 4px 0;
+}
+
+.compilation__level-wraper {
+  display: flex;
+  justify-content: center;
+}
+
+.compilation__button-button {
+  padding-top: 14px;
+  padding-right: 73px;
+  padding-bottom: 14px;
+  padding-left: 72px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 17px;
+  color: #161c35;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
 }
