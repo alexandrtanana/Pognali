@@ -21,6 +21,13 @@
   font-weight: 700;
   line-height: 40px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+  }
 }
 
 .promo__section-image {
@@ -46,6 +53,10 @@
   margin-top: -21px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .promo__authorization-number {
@@ -72,6 +83,7 @@
   text-decoration: none;
   background-color: #ffd74b;
   border-radius: 30px;
+  text-transform: uppercase;
 }
 
 .promo__desc {
@@ -80,27 +92,64 @@
   background-color: $dark-blue;
 }
 
+.promo__desc-wraper {
+  width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
 .promo__desc-blockquote {
   width: 151px;
   padding-bottom: 18px;
-  margin: 0 auto;
+  // margin: 0 auto;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 265px;
+    margin-left: 32px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+  }
 }
 
 .promo__desc-text {
   width: 161px;
-  margin: 0 auto;
+  // margin: 0 auto;
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 251px;
+    margin-left: 32px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+}
+
+.promo__container {
+  background-color: #192144;
 }
 
 .promo__list {
-  background-color: #192144;
+  width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 688px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .promo__item {
@@ -109,8 +158,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 270px;
-  margin: 0 auto;
+
+  @media (min-width: $tablet-width){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 .promo__item:first-child {
@@ -120,10 +173,18 @@
 
 .promo__item:nth-child(2) {
   background-color: #ffa530;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 10px 10px 0 0;
+  }
 }
 
 .promo__item:nth-child(3) {
   background-color: #ffbd30;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 10px 10px;
+  }
 }
 
 .promo__item:last-child {
@@ -148,5 +209,17 @@
   justify-content: start;
   padding-top: 22px;
   padding-right: 21px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-bottom: 22px;
+    margin-left: 33px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+  }
 }
