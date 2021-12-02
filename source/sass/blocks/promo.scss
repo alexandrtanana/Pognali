@@ -81,9 +81,9 @@
   line-height: 20px;
   color: $dark-blue;
   text-decoration: none;
+  text-transform: uppercase;
   background-color: #ffd74b;
   border-radius: 30px;
-  text-transform: uppercase;
 }
 
 .promo__desc {
@@ -146,9 +146,9 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 688px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 688px;
   }
 }
 
@@ -159,7 +159,7 @@
   flex-direction: row;
   justify-content: space-around;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     justify-content: space-around;

@@ -24,8 +24,8 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 688px;
     align-items: center;
+    width: 688px;
   }
 }
 
@@ -44,16 +44,13 @@
   }
 }
 
-
-@media (max-width: $tablet-width) {
-  .page__authorization-link {
+.page__authorization-link {
+  @media (max-width: $mobile-width-only) {
     display: none;
   }
-}
 
-
-@media (min-width: $tablet-width) {
-  .page__authorization-link {
+  @media (min-width: $tablet-width) {
+    display: block;
     padding-top: 15px;
     padding-right: 28px;
     padding-bottom: 15px;
@@ -63,12 +60,11 @@
     line-height: 20px;
     color: $dark-blue;
     text-decoration: none;
+    text-transform: uppercase;
     background-color: #ffd74b;
     border-radius: 30px;
-    text-transform: uppercase;
   }
 }
-
 
 .page-header__section {
   width: 270px;
