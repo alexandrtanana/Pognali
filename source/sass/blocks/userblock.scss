@@ -1,15 +1,25 @@
 .userblock {
+  display: flex;
+  flex-direction: column;
   padding-bottom: 40px;
   background-color: #edeff6;
 }
 
-.userblock__container {
+.userblock__container-userblock {
   display: flex;
   justify-content: space-around;
   width: 270px;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 688px;
+    justify-content: space-between;
+    order: 1;
+    margin-top: 66px;
+    margin-bottom: 51px;
+  }
 }
 
 .userblock__level {
@@ -41,27 +51,67 @@
 }
 
 .userblock__button {
-  display: flex;
   width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+  }
+
+}
+
+.userblock__button-button {
+  display: flex;
   padding-top: 12px;
   padding-right: 67px;
   padding-bottom: 12px;
   padding-left: 67px;
-  margin: 0 auto;
   font-size: 20px;
   font-weight: 500;
   line-height: 18px;
+  color: #161C35;
   background-color: #dfe3f0;
   border: none;
   border-radius: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 21px;
+    padding-right: 231px;
+    padding-bottom: 21px;
+    padding-left: 231px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+  }
 }
 
-.userblock__block {
+.userblock__block-hashtag {
   width: 270px;
   margin: 0 auto;
   margin-top: 20px;
   border: 1px solid #cbced9;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+    width: 618px;
+  }
+}
+
+.userblock__block-transport {
+  width: 270px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-top: -220px;
+    margin-bottom: 165px;
+  }
 }
 
 .userblock__block-container {
@@ -71,12 +121,26 @@
   padding-left: 26px;
 }
 
-.userblock__block legend {
+.userblock__userblock {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.userblock__block-hashtag legend,
+.userblock__block-transport legend {
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
   color: #1d2e5b;
   text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+  }
 }
 
 .userblock__block-container-icon {
@@ -88,8 +152,14 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  color: #444;
+  color: rgba(0, 0, 0, 0.438);
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+  }
 }
 
 .userblock__icon {

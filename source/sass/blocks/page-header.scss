@@ -68,9 +68,15 @@
 
 .page-header__section {
   width: 270px;
-  padding-top: 20px;
-  padding-bottom: 9px;
   margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+    padding-top: 134px;
+    padding-bottom: 66px;
+  }
 }
 
 .page-header__section-title {
@@ -78,4 +84,11 @@
   font-weight: 700;
   line-height: 36px;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 358px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+  }
 }
