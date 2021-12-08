@@ -66,14 +66,14 @@
         <strong class="plans__title">Мои планы:</strong>
         <div class="plans__container">
           <p class="plans__сountry">1.<b>Франция, Италия</b></p>
-          <p class="plans__companion">3 попутчика<br>
-            26 мар — 29 мар</p>
+          <p class="plans__companion">3 попутчика</p>
+          <p class="plans__date">26 мар — 29 мар</p>
           <button class="plans__button">Изменить</button>
         </div>
         <div class="plans__container">
           <p class="plans__сountry">2.<b>Таиланд, Индонезия</b></p>
-          <p class="plans__companion">1 попутчик<br>
-            1 июл — 15 июл</p>
+          <p class="plans__companion">1 попутчик</p>
+          <p class="plans__date">1 июл — 15 июл</p>
           <button class="plans__button">Изменить</button>
         </div>
       </div>
@@ -84,33 +84,39 @@
         <form action="https://echo.htmlacademy.ru" method="POST">
           <div class="form__date">
             <div class="form__wraper">
-              <b class="form__date-subtitle">Шаг 1.<br>Даты пребывания</b>
-              <p class="form__date-subtitle-desc">Укажите предпочтительное количество попутчиков, которых
-                вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
-              <div class="form__date-container">
-                <section class="form__date-people">
-                  <p class="form__date-search">Ищу попутчиков:</p>
-                  <p class="form__date-search-people">чел.</p>
-                </section>
-                <input class="form__people-input" type="number">
+              <div class="form__container">
+                <b class="form__date-subtitle">Шаг 1.<br>Даты пребывания</b>
+                <p class="form__date-subtitle-desc">Укажите предпочтительное количество попутчиков, которых
+                  вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+                <div class="form__date-people">
+                  <section class="form__date-container">
+                    <p class="form__date-search">Ищу попутчиков:</p>
+                    <p class="form__date-search-people">чел.</p>
+                  </section>
+                  <input class="form__people-input" type="number">
+                </div>
+                <div class="form__date-day">
+                  <section class="form__date-container">
+                    <p class="form__date-duration">Длительность:</p>
+                    <p class="form__date-duration-day">дн.</p>
+                  </section>
+                  <input class="form__day-input" type="number">
+                </div>
+                <div class="form__child">
+                  <input class="form__child-input" type="checkbox" value="Можно с детьми" id="child" checked>
+                  <label class="form__child-label" for="child">Можно с детьми</label>
+                </div>
+                <div class="form__calendar">
+                  <input class="form__calendar-input" type="date">
               </div>
-              <div class="form__date-container">
-                <section class="form__date-day">
-                  <p class="form__date-duration">Длительность:</p>
-                  <p class="form__date-duration-day">дн.</p>
-                </section>
-                <input class="form__day-input" type="number">
+                <button class="form__button-next">Следующий шаг
+                  <img class="form__button-img" src="img/icon/show-directions.svg" width="13" height="13"
+                  alt="следующий шаг">
+                </button>
               </div>
-              <input class="form__child" type="checkbox" value="Можно с детьми" id="child" checked>
-              <label class="form__child-label" for="child">Можно с детьми</label>
-              <div class="form__calendar">
-                <input class="form__calendar-input" type="date">
-              </div>
-              <button class="form__button-next">Следующий шаг</button>
-            </div>
           </div>
           <div class="form__route">
-            <div class="form__wraper">
+            <div class="form__container">
               <b class="form__route-subtitle">Шаг 2.<br>
                 Маршрут</b>
               <p class="form__route-subtitle-desc">Укажите страны, которые вы хотели бы посетить. Это может быть одна
@@ -131,13 +137,16 @@
                 </select>
               </div>
               <div class="form__button-container">
-                <button class="form__button-next" type="button">Следующий шаг</button>
+                <button class="form__button-next" type="button">Следующий шаг
+                  <img class="form__button-img" src="img/icon/show-directions.svg" width="13" height="13"
+                alt="следующий шаг">
+                </button>
                 <button class="form__button-back" type="button">На шаг назад</button>
               </div>
             </div>
           </div>
           <div class="form__entertainment">
-            <div class="form__wraper">
+            <div class="form__container">
               <b class="form__entertainment-subtitle">Шаг 3. Развлечения</b>
               <p class="form__entertainment-subtitle-desc">Наконец, расскажите о своих планах времяпровождения. Можно
                 писать в
@@ -151,7 +160,10 @@
                 <textarea class="form__entertainment-textarea" name="action-plan" placeholder="Пить пиво и лазить
               по старым замкам, наслаждаться архитектурой и вот это все."></textarea>
                 <div class="form__button-container">
-                  <button class="form__button-next" type="button">Следующий шаг</button>
+                  <button class="form__button-next" type="button">Следующий шаг
+                    <img class="form__button-img" src="img/icon/show-directions.svg" width="13" height="13"
+                alt="следующий шаг">
+                  </button>
                   <button class="form__button-back" type="button">На шаг назад</button>
                 </div>
               </div>

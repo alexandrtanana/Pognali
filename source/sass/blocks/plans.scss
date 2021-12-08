@@ -48,14 +48,46 @@
   font-weight: 700;
   line-height: 16px;
   color: #1d2e5b;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+  }
 }
 
 .plans__companion {
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
   color: #1d2e5b;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}
+
+.plans__date {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #1D2E5B;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+  }
 }
 
 .plans__button {
@@ -68,4 +100,10 @@
   color: #0000007e;
   background-color: #0000;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+  }
 }
