@@ -14,9 +14,9 @@
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    width: 688px;
     justify-content: space-between;
     order: 1;
+    width: 688px;
     margin-top: 66px;
     margin-bottom: 51px;
   }
@@ -57,7 +57,6 @@
   @media (min-width: $tablet-width) {
     width: 618px;
   }
-
 }
 
 .userblock__button-button {
@@ -69,21 +68,21 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 18px;
-  color: #161C35;
+  color: #161c35;
+  text-transform: uppercase;
   background-color: #dfe3f0;
   border: none;
   border-radius: 30px;
-  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     padding-top: 21px;
     padding-right: 231px;
     padding-bottom: 21px;
     padding-left: 231px;
-    border-radius: 10px;
     font-size: 20px;
     font-weight: 500;
     line-height: 18px;
+    border-radius: 10px;
   }
 }
 

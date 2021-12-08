@@ -81,7 +81,6 @@
 
   @media (min-width: $tablet-width) {
     width: 538px;
-
   }
 }
 
@@ -224,20 +223,20 @@
   border-radius: 20px;
 
   @media (min-width: $tablet-width) {
+    align-items: baseline;
+    justify-content: space-between;
     order: 7;
-    margin-top: 47px;
-    margin-bottom: 56px;
+    width: 286px;
     padding-top: 29px;
     padding-right: 33px;
     padding-bottom: 27px;
     padding-left: 34px;
-    width: 286px;
-    justify-content: space-between;
-    align-items: baseline;
+    margin-top: 47px;
+    margin-bottom: 56px;
   }
 }
 
-.form__button-img{
+.form__button-img {
   @media (max-width: $tablet-width) {
     display: none;
   }
