@@ -9,6 +9,12 @@
 .tarifs__container {
   width: 270px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 688px;
+  }
 }
 
 .tarifs__title {
@@ -19,16 +25,28 @@
   font-weight: 700;
   line-height: 24px;
   color: #ff8d30;
+
+  @media (min-width: $tablet-width) {
+    width: 482px;
+    padding-top: 110px;
+    margin: 0 auto;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+  }
 }
 
 .tarifs__list {
   padding-top: 44px;
 }
 
+.tarifs__item {
+  display: flex;
+}
+
 .tarifs__item-text {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   width: 270px;
   padding-bottom: 30px;
   font-size: 16px;
@@ -36,6 +54,31 @@
   line-height: 16px;
   color: #444;
   border: 1px solid #e1e3e9;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    order: 2;
+    width: 600px;
+    padding-bottom: 30px;
+    padding-left: 22px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+}
+
+.tarifs__item-text-number {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 28px;
+  }
 }
 
 .tarifs__link {
@@ -49,4 +92,11 @@
   font-weight: 700;
   line-height: 16px;
   color: #132576;
+
+  @media (min-width: $tablet-width) {
+    width: 274px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+  }
 }

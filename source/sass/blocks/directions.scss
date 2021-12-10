@@ -10,23 +10,23 @@
   border-radius: 0 0 30px 30px;
 }
 
-.directions__container {
-  width: 270px;
-  margin: 0 auto;
-}
-
-.directions__country {
-  margin-bottom: 11px;
-}
-
 .directions__title {
   display: flex;
+  width: 144px;
   padding-top: 101px;
   padding-left: 25px;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
   color: #ff8d30;
+
+  @media (min-width: $tablet-width) {
+    width: 269px;
+    padding-bottom: 57px;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+  }
 }
 
 .directions__text {
@@ -38,6 +38,35 @@
   font-weight: 300;
   line-height: 22px;
   color: #444;
+
+  @media (min-width: $tablet-width) {
+    width: 378px;
+    padding-bottom: 104px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+  }
+}
+
+.directions__container {
+  width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 688px;
+  }
+}
+
+.directions__country {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 618px;
+  }
 }
 
 .directions__country-wrap {
@@ -50,6 +79,10 @@
   min-height: 89px;
   background-color: $white;
   border-radius: 15px 15px 15px 15px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
 }
 
 .directions__country-desc {
@@ -62,18 +95,37 @@
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+  }
 }
 
 .directions__country-text {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+  color: rgba(68, 68, 68, 0.534);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+  }
 }
 
 .directions__country-visitors {
   display: flex;
   flex-direction: row;
   padding-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 26px;
+  }
 }
 
 .directions__country-visitors-number {
@@ -87,6 +139,11 @@
   margin: 0 auto;
   background-color: #ffd74b;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    width: 618px;
+  }
 }
 
 .directions__link-link {
@@ -97,9 +154,17 @@
   line-height: 18px;
   color: #1d2e5b;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 32px;
+  }
 }
 
 .directions__link-img {
   padding-top: 25px;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 32px;
+  }
 }

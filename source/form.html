@@ -18,6 +18,7 @@
               alt="логотип погнали"></a>
           <button
             class="page-header__nav-button page-header__nav-button-closed page-header__nav-button-opened"></button>
+          <a class="page__authorization-link " href="#">Авторизоваться</a>
         </div>
       </nav>
       <section class="page-header__section">
@@ -27,8 +28,8 @@
   </header>
   <main class="page-main page-main-internal">
     <div class="userblock">
-      <div class="userblock__wraper">
-        <div class="userblock__container">
+      <div class="userblock__container">
+        <div class="userblock__container-userblock">
           <div class="userblock__level">
             <div class="userblock__level-wrap">
               <b class="userblock__desc">80</b>
@@ -37,9 +38,11 @@
           </div>
           <img class="userblock__avatar" src="img/demin-form-avatar.png" alt="аватар">
         </div>
-        <button class="userblock__button">Сменить фото</button>
+        <div class="userblock__button">
+          <button class="userblock__button-button">Сменить фото</button>
+        </div>
       </div>
-      <fieldset class="userblock__block">
+      <fieldset class="userblock__block-hashtag">
         <legend>Теги</legend>
         <div class="userblock__block-container">
           <a class="userblock__hashtag" href="#">#бургер</a>
@@ -49,7 +52,7 @@
           <a class="userblock__hashtag" href="#">#крафт</a>
         </div>
       </fieldset>
-      <fieldset class="userblock__block">
+      <fieldset class="userblock__block-transport">
         <legend>Транспорт</legend>
         <div class="userblock__block-container userblock__block-container-icon">
           <img class="userblock__icon" src="img/icon/airplane-icon.svg" width="15" height="15" alt="самолёт">
@@ -64,14 +67,14 @@
         <strong class="plans__title">Мои планы:</strong>
         <div class="plans__container">
           <p class="plans__сountry">1.<b>Франция, Италия</b></p>
-          <p class="plans__companion">3 попутчика<br>
-            26 мар — 29 мар</p>
+          <p class="plans__companion">3 попутчика</p>
+          <p class="plans__date">26 мар — 29 мар</p>
           <button class="plans__button">Изменить</button>
         </div>
         <div class="plans__container">
           <p class="plans__сountry">2.<b>Таиланд, Индонезия</b></p>
-          <p class="plans__companion">1 попутчик<br>
-            1 июл — 15 июл</p>
+          <p class="plans__companion">1 попутчик</p>
+          <p class="plans__date">1 июл — 15 июл</p>
           <button class="plans__button">Изменить</button>
         </div>
       </div>
@@ -82,75 +85,88 @@
         <form action="https://echo.htmlacademy.ru" method="POST">
           <div class="form__date">
             <div class="form__wraper">
-              <b class="form__date-subtitle">Шаг 1.<br>Даты пребывания</b>
-              <p class="form__date-subtitle-desc">Укажите предпочтительное количество попутчиков, которых
-                вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
-              <div class="form__date-container">
-                <section class="form__date-people">
-                  <p class="form__date-search">Ищу попутчиков:</p>
-                  <p class="form__date-search-people">чел.</p>
-                </section>
-                <input class="form__people-input" type="number">
-              </div>
-              <div class="form__date-container">
-                <section class="form__date-day">
-                  <p class="form__date-duration">Длительность:</p>
-                  <p class="form__date-duration-day">дн.</p>
-                </section>
-                <input class="form__day-input" type="number">
-              </div>
-              <input class="form__child" type="checkbox" value="Можно с детьми" id="child" checked>
-              <label class="form__child-label" for="child">Можно с детьми</label>
-              <div class="form__calendar">
-                <input class="form__calendar-input" type="date">
-              </div>
-              <button class="form__button-next">Следующий шаг</button>
-            </div>
-          </div>
-          <div class="form__route">
-            <div class="form__wraper">
-              <b class="form__route-subtitle">Шаг 2.<br>
-                Маршрут</b>
-              <p class="form__route-subtitle-desc">Укажите страны, которые вы хотели бы посетить. Это может быть одна
-                или сразу
-                несколько.</p>
-              <div class="form__route-wraper">
-                <select class="form__route-select" name="select" id="route1">
-                  <option class="form__route-option" value="Босния и Герцеговина ">Босния и Герцеговина</option>
-                </select>
-                <select class="form__route-select" name="select" id="route2">
-                  <option class="form__route-option" value="Чехия">Чехия</option>
-                </select>
-                <select class=" form__route-select" name=" select" id="route3">
-                  <option class="form__route-option" value="Выберите страну">Выберите страну</option>
-                </select>
-                <select class="form__route-select" name="select" id="route4">
-                  <option class="form__route-option" value="Выберите страну">Добавьте страну</option>
-                </select>
-              </div>
-              <div class="form__button-container">
-                <button class="form__button-next" type="button">Следующий шаг</button>
-                <button class="form__button-back" type="button">На шаг назад</button>
+              <div class="form__container">
+                <b class="form__date-subtitle">Шаг 1.<br>Даты пребывания</b>
+                <p class="form__date-subtitle-desc">Укажите предпочтительное количество попутчиков, которых
+                  вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+                <div class="form__date-people">
+                  <section class="form__date-container">
+                    <p class="form__date-search">Ищу попутчиков:</p>
+                    <p class="form__date-search-people">чел.</p>
+                  </section>
+                  <input class="form__people-input" type="number">
+                </div>
+                <div class="form__date-day">
+                  <section class="form__date-container">
+                    <p class="form__date-duration">Длительность:</p>
+                    <p class="form__date-duration-day">дн.</p>
+                  </section>
+                  <input class="form__day-input" type="number">
+                </div>
+                <div class="form__child">
+                  <input class="form__child-input" type="checkbox" value="Можно с детьми" id="child" checked>
+                  <label class="form__child-label" for="child">Можно с детьми</label>
+                </div>
+                <div class="form__calendar">
+                  <input class="form__calendar-input" type="date">
+                </div>
+                <button class="form__button-next">Следующий шаг
+                  <img class="form__button-img" src="img/icon/show-directions.svg" width="13" height="13"
+                    alt="следующий шаг">
+                </button>
               </div>
             </div>
-          </div>
-          <div class="form__entertainment">
-            <div class="form__wraper">
-              <b class="form__entertainment-subtitle">Шаг 3. Развлечения</b>
-              <p class="form__entertainment-subtitle-desc">Наконец, расскажите о своих планах времяпровождения. Можно
-                писать в
-                свободной форме и ставить тэги.
-              </p>
-              <div class="form__entertainment-container">
-                <b class="form__entertainment-country">Босния и Герцеговина</b>
-                <textarea class="form__entertainment-textarea" name="action-plan"
-                  placeholder="План действий"></textarea>
-                <b class="form__entertainment-country">Чехия</b>
-                <textarea class="form__entertainment-textarea" name="action-plan" placeholder="Пить пиво и лазить
-              по старым замкам, наслаждаться архитектурой и вот это все."></textarea>
+            <div class="form__route">
+              <div class="form__container">
+                <b class="form__route-subtitle">Шаг 2.<br>
+                  Маршрут</b>
+                <p class="form__route-subtitle-desc">Укажите страны, которые вы хотели бы посетить. Это может быть одна
+                  или сразу
+                  несколько.</p>
+                <div class="form__route-wraper">
+                  <select class="form__route-select" name="select" id="route1">
+                    <option class="form__route-option" value="Босния и Герцеговина ">Босния и Герцеговина</option>
+                  </select>
+                  <select class="form__route-select" name="select" id="route2">
+                    <option class="form__route-option" value="Чехия">Чехия</option>
+                  </select>
+                  <select class=" form__route-select" name=" select" id="route3">
+                    <option class="form__route-option" value="Выберите страну">Выберите страну</option>
+                  </select>
+                  <select class="form__route-select" name="select" id="route4">
+                    <option class="form__route-option" value="Выберите страну">Добавьте страну</option>
+                  </select>
+                </div>
                 <div class="form__button-container">
-                  <button class="form__button-next" type="button">Следующий шаг</button>
+                  <button class="form__button-next" type="button">Следующий шаг
+                    <img class="form__button-img" src="img/icon/show-directions.svg" width="13" height="13"
+                      alt="следующий шаг">
+                  </button>
                   <button class="form__button-back" type="button">На шаг назад</button>
+                </div>
+              </div>
+            </div>
+            <div class="form__entertainment">
+              <div class="form__container">
+                <b class="form__entertainment-subtitle">Шаг 3. Развлечения</b>
+                <p class="form__entertainment-subtitle-desc">Наконец, расскажите о своих планах времяпровождения. Можно
+                  писать в
+                  свободной форме и ставить тэги.
+                </p>
+                <div class="form__entertainment-container">
+                  <b class="form__entertainment-country">Босния и Герцеговина</b>
+                  <textarea class="form__entertainment-textarea" name="action-plan"
+                    placeholder="План действий"></textarea>
+                  <b class="form__entertainment-country">Чехия</b>
+                  <textarea class="form__entertainment-textarea" name="action-plan" placeholder="Пить пиво и лазить
+              по старым замкам, наслаждаться архитектурой и вот это все."></textarea>
+                  <div class="form__button-container">
+                    <button class="form__button-next" type="button">Следующий шаг
+                      <img class="form__button-img" src="img/icon/show-directions.svg" width="13" height="13"
+                        alt="следующий шаг">
+                    </button>
+                    <button class="form__button-back" type="button">На шаг назад</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -159,7 +175,7 @@
       </div>
     </div>
   </main>
-  <footer class="page-footer page-foter-directions">
+  <footer class="page-footer">
     <div class="page-footer__wrap">
       <div class="page-footer__logo">
         <a class="page-footer__logo-link" href="#"><img src="img/icon/logo-footer.svg" alt="логотип погнали"></a>
@@ -169,9 +185,9 @@
         <a class="page-footer__social-vk" href="#"></a>
         <a class="page-footer__social-instagram" href="#"></a>
       </div>
-      <div class="copyright">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="htmlacademy.ru/intensive/adaptive"></a>
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <a class="page-footer__copyright-link" href="htmlacademy.ru/intensive/adaptive"></a>
       </div>
     </div>
   </footer>

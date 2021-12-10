@@ -15,6 +15,7 @@
       <div class="page-header__nav-menu">
         <a class="page-header__nav-link" href="#"><img src="img/icon/lobo-mobile.png" alt="логотип погнали"></a>
         <button class="page-header__nav-button page-header__nav-button-closed page-header__nav-button-opened"></button>
+        <a class="page__authorization-link " href="#">Авторизоваться</a>
       </div>
     </nav>
   </header>
@@ -32,8 +33,10 @@
         <a class="promo__authorization-link" href="#">Авторизоваться</a>
       </div>
       <div class="promo__desc">
-        <blockquote class="promo__desc-blockquote">«Лучшее приложение,что я видел в жизни!»</blockquote>
-        <p class="promo__desc-text">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+        <div class="promo__desc-wraper">
+          <blockquote class="promo__desc-blockquote">«Лучшее приложение,что я видел в жизни!»</blockquote>
+          <p class="promo__desc-text">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+        </div>
       </div>
       <div class="promo__container">
         <ul class="promo__list">
@@ -60,6 +63,11 @@
               идеями путешествий
               и черпайте вдохновение в чужих.</p>
             <b class="desc__text">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b>
+            <div class="desc__link">
+              <a class="desc__link-link" href="#">Подробнее</a>
+              <img class="desc__link-img" src="img/icon/show-directions.svg" width="13" height="13"
+                alt="подробнее о сервисе">
+            </div>
           </div>
         </div>
       </div>
@@ -133,30 +141,32 @@
             единомышленников!</b>
         </div>
         <div class="users__wraper">
-          <div class="users__cart">
-            <img src="img/firsova-desktop.png" width="270" height="270" alt="Таня Фирсова">
-            <div class="users__cart-wrap">
-              <b class="users__name">Таня Фирсова</b>
-              <div class="users__cart-container">
-                <a class="users__hashtag" href="">#Зож</a>
-                <a class="users__hashtag" href="">#пп</a>
-                <a class="users__hashtag" href="">#Фитнес</a>
-                <a class="users__hashtag" href="">#пляж</a>
-                <a class="users__hashtag" href="">#авокадо</a>
-                <a class="users__hashtag" href="">#смузи</a>
+          <div class="users__wrap">
+            <div class="users__cart">
+              <img src="img/firsova-desktop.png" width="270" height="270" alt="Таня Фирсова">
+              <div class="users__cart-wrap">
+                <b class="users__name">Таня Фирсова</b>
+                <div class="users__cart-container">
+                  <a class="users__hashtag" href="">#Зож</a>
+                  <a class="users__hashtag" href="">#пп</a>
+                  <a class="users__hashtag" href="">#Фитнес</a>
+                  <a class="users__hashtag" href="">#пляж</a>
+                  <a class="users__hashtag" href="">#авокадо</a>
+                  <a class="users__hashtag" href="">#смузи</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="users__cart">
-            <img src="img/demin-desktop.png" width="270" height="270" alt="Петя Дёмин">
-            <div class="users__cart-wrap">
-              <b class="users__name">Петя Дёмин</b>
-              <div class="users__cart-container">
-                <a class="users__hashtag" href="">#бургер</a>
-                <a class="users__hashtag" href="">#бар</a>
-                <a class="users__hashtag" href="">#футбол</a>
-                <a class="users__hashtag" href="">#концерт</a>
-                <a class="users__hashtag" href="">#крафт</a>
+            <div class="users__cart">
+              <img src="img/demin-desktop.png" width="270" height="270" alt="Петя Дёмин">
+              <div class="users__cart-wrap">
+                <b class="users__name">Петя Дёмин</b>
+                <div class="users__cart-container">
+                  <a class="users__hashtag" href="">#бургер</a>
+                  <a class="users__hashtag" href="">#бар</a>
+                  <a class="users__hashtag" href="">#футбол</a>
+                  <a class="users__hashtag" href="">#концерт</a>
+                  <a class="users__hashtag" href="">#крафт</a>
+                </div>
               </div>
             </div>
           </div>
@@ -173,16 +183,16 @@
         <b class="tarifs__title">Добавьте свой профиль</b>
         <ul class="tarifs__list">
           <li class="tarifs__item">
-            <p class="tarifs__item-text">Базовое размещение<br>Бесплатно<span class="tarifs__item-text-number1">1</span>
-            </p>
+            <p class="tarifs__item-text">Базовое размещение<span>Бесплатно</span></p><span
+              class="tarifs__item-text-number">1</span>
           </li>
           <li class="tarifs__item">
-            <p class="tarifs__item-text">Вывод на первых позициях<br>99 руб./мес<span
-                class="tarifs__item-text-number2">2</span></p>
+            <p class="tarifs__item-text">Вывод на первых позициях<span>99 руб./мес</span></p><span
+              class="tarifs__item-text-number">2</span>
           </li>
           <li class="tarifs__item">
-            <p class="tarifs__item-text">Кастомный цвет карточки<br>59 руб./мес<span
-                class="tarifs__item-text-number3">3</span></p>
+            <p class="tarifs__item-text">Кастомный цвет карточки<span>59 руб./мес</span></p><span
+              class="tarifs__item-text-number">3</span>
           </li>
         </ul>
         <a class="tarifs__link">Показать тарифы для бизнеса</a>
@@ -190,25 +200,27 @@
     </div>
     <div class="feedback">
       <div class="feedback__wrap">
-        <div class="feedback__container">
-          <b class="feedback__title">Заинтересовались?</b>
-          <p class="feedback__desc">Зарегистрируйтесь, это быстро и бесплатно!
-            Уже зарегистрированы? Тогда скорее <a class="feedback__desc-link" href="#">авторизуйтесь</a>.</p>
-        </div>
-        <div class="feedback__email">
-          <form class="feedback__email-form" action="https://echo.htmlacademy.ru" method="POST">
-            <input class="feedback__email-input" type="email" name="email" id="email" placeholder="E-mail">
-            <button class="feedback__email-button" type="submit" value="Отправить форму"><img
-                class="feedback__email-img" src="img/icon/show-directions.svg" width="13" height="13"
-                alt="отправить емейл"></button>
-          </form>
-        </div>
-        <div class="feedback__aside">
-          <p class="feedback__aside-text">Остались вопросы?<br>
-            Мы с радостью на них ответим!</p>
-          <div class="feedback__aside-wrap">
-            <a class="feedback__aside-telephone" href="tel:88005558628">8 800 555-86-28</a>
-            <a class="feedback__aside-email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <div class="feedback__wraper">
+          <div class="feedback__container">
+            <b class="feedback__title">Заинтересовались?</b>
+            <p class="feedback__desc">Зарегистрируйтесь, это быстро и бесплатно!
+              Уже зарегистрированы? Тогда скорее <a class="feedback__desc-link" href="#">авторизуйтесь</a>.</p>
+          </div>
+          <div class="feedback__email">
+            <form class="feedback__email-form" action="https://echo.htmlacademy.ru" method="POST">
+              <input class="feedback__email-input" type="email" name="email" id="email" placeholder="E-mail">
+              <button class="feedback__email-button" type="submit" value="Отправить форму"><img
+                  class="feedback__email-img" src="img/icon/show-directions.svg" width="13" height="13"
+                  alt="отправить емейл"></button>
+            </form>
+          </div>
+          <div class="feedback__aside">
+            <p class="feedback__aside-text">Остались вопросы?
+              Мы с радостью на них ответим!</p>
+            <div class="feedback__aside-wrap">
+              <a class="feedback__aside-telephone" href="tel:88005558628">8 800 555-86-28</a>
+              <a class="feedback__aside-email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
           </div>
         </div>
       </div>
@@ -230,9 +242,9 @@
         <a class="page-footer__social-vk" href="#"></a>
         <a class="page-footer__social-instagram" href="#"></a>
       </div>
-      <div class="copyright">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="htmlacademy.ru/intensive/adaptive"></a>
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <a class="page-footer__copyright-link" href="htmlacademy.ru/intensive/adaptive"></a>
       </div>
     </div>
   </footer>
