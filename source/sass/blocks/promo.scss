@@ -27,6 +27,11 @@
     font-size: 60px;
     font-weight: 700;
     line-height: 70px;
+
+    @media (min-width: $desktop-width) {
+      position: relative;
+      left: -400px;
+    }
   }
 }
 
@@ -90,15 +95,30 @@
   min-height: 285px;
   padding-top: 48px;
   background-color: $dark-blue;
+
+  @media (min-width: $desktop-width) {
+    min-height: 0;
+    padding-top: 0;
+    height: 0;
+  }
 }
 
 .promo__desc-wraper {
+  display: flex;
+  flex-direction: column;
   width: 270px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 768px;
     margin: 0 auto;
+
+    @media (min-width: $desktop-width) {
+      width: 1320px;
+      align-items: end;
+      position: relative;
+      top: -420px;
+    }
   }
 }
 
@@ -139,6 +159,10 @@
 
 .promo__container {
   background-color: #192144;
+
+  @media (min-width: $desktop-width) {
+    height: 0;
+  }
 }
 
 .promo__list {
@@ -149,6 +173,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 688px;
+
+    @media (min-width: $desktop-width) {
+      width: 1320px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
   }
 }
 
@@ -167,29 +196,61 @@
 }
 
 .promo__item:first-child {
+  display: flex;
+  flex-direction: column;
   background-color: #ff8d30;
   border-radius: 10px 10px 0 0;
+
+  @media (min-width: $desktop-width) {
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .promo__item:nth-child(2) {
   background-color: #ffa530;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     border-radius: 10px 10px 0 0;
+
+    @media (min-width: $desktop-width) {
+      border-radius: 10px;
+      flex-direction: row;
+      align-items: center;
+    }
   }
 }
 
 .promo__item:nth-child(3) {
   background-color: #ffbd30;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     border-radius: 0 0 10px 10px;
+
+    @media (min-width: $desktop-width) {
+      border-radius: 10px;
+      flex-direction: row;
+      align-items: center;
+    }
   }
 }
 
 .promo__item:last-child {
   background-color: #ffd74b;
   border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .promo__item-text {
@@ -209,6 +270,7 @@
   justify-content: start;
   padding-top: 22px;
   padding-right: 21px;
+  padding-left: 24px;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;

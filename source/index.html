@@ -93,58 +93,60 @@
     </div>
     <div class="directions">
       <div class="directions__wraper">
-        <div class="directions__container">
-          <b class="directions__title">Направления</b>
-          <p class="directions__text">Мы не продаем туры<br> и ничего не рекламируем.
-            Люди сами пишут о странах, куда хотели бы отправиться<br>
-            и чем можно там заняться.
-          </p>
-        </div>
-        <div class="directions__container">
-          <div class="directions__country">
-            <img src="img/thailand-mobile.png" width="270" height="110" alt="тайланд">
-            <div class="directions__country-wrap">
-              <div class="directions__country-desc">
-                <b class="directions__country-country">Таиланд</b>
-                <p class="directions__country-text">Джунгли зовут</p>
+        <div class="directions__wrap">
+          <div class="directions__container">
+            <b class="directions__title">Направления</b>
+            <p class="directions__text">Мы не продаем туры<br> и ничего не рекламируем.
+              Люди сами пишут о странах, куда хотели бы отправиться<br>
+              и чем можно там заняться.
+            </p>
+          </div>
+          <div class="directions__container">
+            <div class="directions__country">
+              <img src="img/thailand-mobile.png" width="270" height="110" alt="тайланд">
+              <div class="directions__country-wrap">
+                <div class="directions__country-desc">
+                  <b class="directions__country-country">Таиланд</b>
+                  <p class="directions__country-text">Джунгли зовут</p>
+                </div>
+                <div class="directions__country-visitors">
+                  <img src="img/icon/Vector.svg" width="11" height="12" alt="посетители">
+                  <p class="directions__country-visitors-number">18321</p>
+                </div>
               </div>
-              <div class="directions__country-visitors">
-                <img src="img/icon/Vector.svg" width="11" height="12" alt="посетители">
-                <p class="directions__country-visitors-number">18321</p>
+            </div>
+            <div class="directions__country">
+              <img src="img/france-mobile.png" width="270" height="110" alt="франция">
+              <div class="directions__country-wrap">
+                <div class="directions__country-desc">
+                  <b class="directions__country-country">Франия</b>
+                  <p class="directions__country-text">Трэ бьен, манифик!</p>
+                </div>
+                <div class="directions__country-visitors">
+                  <img src="img/icon/Vector.svg" width="11" height="12" alt="посетители">
+                  <p class="directions__country-visitors-number">12518</p>
+                </div>
+              </div>
+            </div>
+            <div class="directions__country">
+              <img src="img/czech-mobile.png" width="270" height="110" alt="чехия">
+              <div class="directions__country-wrap">
+                <div class="directions__country-desc">
+                  <b class="directions__country-country">Чехия</b>
+                  <p class="directions__country-text">Закоулки старой Европы</p>
+                </div>
+                <div class="directions__country-visitors">
+                  <img src="img/icon/Vector.svg" width="11" height="12" alt="посетители">
+                  <p class="directions__country-visitors-number">5326</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="directions__country">
-            <img src="img/france-mobile.png" width="270" height="110" alt="франция">
-            <div class="directions__country-wrap">
-              <div class="directions__country-desc">
-                <b class="directions__country-country">Франия</b>
-                <p class="directions__country-text">Трэ бьен, манифик!</p>
-              </div>
-              <div class="directions__country-visitors">
-                <img src="img/icon/Vector.svg" width="11" height="12" alt="посетители">
-                <p class="directions__country-visitors-number">12518</p>
-              </div>
-            </div>
+          <div class="directions__link">
+            <a class="directions__link-link" href="form.html">Показать все</a>
+            <img class="directions__link-img" src="img/icon/show-directions.svg" width="13" height="13"
+              alt="показать направления">
           </div>
-          <div class="directions__country">
-            <img src="img/czech-mobile.png" width="270" height="110" alt="чехия">
-            <div class="directions__country-wrap">
-              <div class="directions__country-desc">
-                <b class="directions__country-country">Чехия</b>
-                <p class="directions__country-text">Закоулки старой Европы</p>
-              </div>
-              <div class="directions__country-visitors">
-                <img src="img/icon/Vector.svg" width="11" height="12" alt="посетители">
-                <p class="directions__country-visitors-number">5326</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="directions__link">
-          <a class="directions__link-link" href="form.html">Показать все</a>
-          <img class="directions__link-img" src="img/icon/show-directions.svg" width="13" height="13"
-            alt="показать направления">
         </div>
       </div>
     </div>
@@ -189,11 +191,11 @@
               </div>
             </div>
           </div>
-          <div class="users__link">
-            <a class="users__link-link" href="catalog.html">Показать всех</a>
-            <img class="users__link-img" src="img/icon/show-directions.svg" width="13" height="13"
-              alt="показать всех попутчиков">
-          </div>
+        </div>
+        <div class="users__link">
+          <a class="users__link-link" href="catalog.html">Показать всех</a>
+          <img class="users__link-img" src="img/icon/show-directions.svg" width="13" height="13"
+            alt="показать всех попутчиков">
         </div>
       </div>
     </div>
@@ -245,11 +247,15 @@
       </div>
     </div>
     <div class="location">
-      <p class="location__adress">ул. Большая Конюшенная, 19/8</p>
-      <button class="location__button">Проложить маршрут <img class="location__button-img"
-          src="img/icon/show-directions.svg" width="13" height="13" alt="показать всех попутчиков"></button>
+      <div class="location__container">
+        <p class="location__adress">ул. Большая Конюшенная, 19/8</p>
+        <button class="location__button">Проложить маршрут <img class="location__button-img"
+            src="img/icon/show-directions.svg" width="13" height="13" alt="показать всех попутчиков"></button>
+      </div>
     </div>
-    <div class="map"></div>
+    <div class="map"><iframe class="map__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300288!2d30.320858715847486!3d59.938719169054544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1639407432752!5m2!1sru!2sby"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrap">
