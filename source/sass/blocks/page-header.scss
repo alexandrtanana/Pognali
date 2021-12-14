@@ -84,19 +84,19 @@
 }
 
 .page-header__nav-menu {
-  background-color: $white;
   position: absolute;
   z-index: 9999999999999999;
-  width: 100%;
   display: none;
+  width: 100%;
+  background-color: $white;
 
   @media (min-width: $desktop-width) {
-    width: 800px;
     position: relative;
-    margin: 0 auto;
     top: -70px;
-    background-color: #161c35;
     display: block;
+    width: 800px;
+    margin: 0 auto;
+    background-color: #161c35;
   }
 }
 
@@ -111,9 +111,9 @@
     width: 574px;
 
     @media (min-width: $desktop-width) {
-      width: 100%;
       flex-direction: row;
       align-items: center;
+      width: 100%;
     }
   }
 }
@@ -122,22 +122,22 @@
   display: flex;
   flex-direction: column;
   width: 195px;
-  margin: 0 auto;
   padding-top: 70px;
+  margin: 0 auto;
   margin-bottom: 51px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 383px;
-    text-align: left;
     margin: 0;
     margin-bottom: 150px;
+    text-align: left;
 
     @media (min-width: $desktop-width) {
       flex-direction: row;
       width: 500px;
-      margin: 0;
       padding: 0;
+      margin: 0;
     }
   }
 }
@@ -155,10 +155,10 @@
     line-height: 71px;
 
     @media (min-width: $desktop-width) {
+      margin-left: 34px;
       font-size: 20px;
       font-weight: 500;
       line-height: 20px;
-      margin-left: 34px;
       color: #fff;
     }
   }
@@ -175,9 +175,9 @@
   font-weight: 700;
   line-height: 30px;
   color: $dark-blue;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  text-align: center;
   background-color: #ffd74b;
   border-radius: 30px;
 
@@ -209,7 +209,7 @@
     line-height: 28px;
 
     @media (min-width: $desktop-width) {
-      color:  #ff8d30;
+      color: #ff8d30;
     }
   }
 }
@@ -229,14 +229,14 @@
 
     @media (min-width: $desktop-width) {
       margin: 0;
-      color: #ffbd30;;
+      color: #ffbd30;
     }
   }
 }
 
 .page-header__social {
-  padding-bottom: 42px;
   width: 160px;
+  padding-bottom: 42px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {

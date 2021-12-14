@@ -7,19 +7,19 @@
 }
 
 .users__container {
-  width: 270px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  width: 270px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 688px;
 
     @media (min-width: $desktop-width) {
-      width: 1320px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      width: 1320px;
     }
   }
 }
@@ -184,8 +184,8 @@
 
     @media (min-width: $desktop-width) {
       position: absolute;
-      width: 280px;
       top: 445px;
+      width: 280px;
     }
   }
 }
