@@ -13,12 +13,29 @@
   <header class="page-header page-header-internal">
     <div class="page-header__container">
       <nav class="page-header__nav">
-        <div class="page-header__nav-menu">
-          <a class="page-header__nav-link" href="index.html"><img src="img/icon/lobo-mobile.png"
-              alt="логотип погнали"></a>
-          <button
-            class="page-header__nav-button page-header__nav-button-closed page-header__nav-button-opened"></button>
-          <a class="page__authorization-link " href="#">Авторизоваться</a>
+        <div class="page-header__nav-wrap">
+          <a class="page-header__nav-link" href="index.html"><img src="img/icon/lobo-mobile.png" alt="логотип погнали"></a>
+          <button class="page-header__nav-button page-header__nav-button-closed page-header__nav-button-opened"></button>
+          <a class="page__authorization-link" href="#">Авторизоваться</a>
+        </div>
+        <div class="page-header__nav-menu page-header__nav-opened">
+          <div class="page-header__nav-container">
+            <ul class="page-header__nav-list">
+              <li class="page-header__nav-item">О сервисе</li>
+              <li class="page-header__nav-item">Направления</li>
+              <li class="page-header__nav-item">Попутчики</li>
+            </ul>
+            <a class="page-header__authorization-link" href="#">Авторизоваться</a>
+            <div class="page-header__nav-contacts">
+              <a class="page-header__nav-telephone" href="tel:88005558628">8 800 555-86-28</a>
+              <a class="page-header__nav-email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="page-header__social">
+              <a class="page-header__social-facebook" href="#">facebook</a>
+              <a class="page-header__social-vk" href="#">vk</a>
+              <a class="page-header__social-instagram" href="#">instagram</a>
+            </div>
+          </div>
         </div>
       </nav>
       <section class="page-header__section">
@@ -39,49 +56,62 @@
           <img class="userblock__avatar" src="img/demin-form-avatar.png" alt="аватар">
         </div>
         <div class="userblock__button">
-          <button class="userblock__button-button">Сменить фото</button>
+          <button class="userblock__button-button"><span>Сменить</span> фото</button>
         </div>
       </div>
-      <fieldset class="userblock__block-hashtag">
-        <legend>Теги</legend>
-        <div class="userblock__block-container">
-          <a class="userblock__hashtag" href="#">#бургер</a>
-          <a class="userblock__hashtag" href="#">#бар</a>
-          <a class="userblock__hashtag" href="#">#футбол</a>
-          <a class="userblock__hashtag" href="#">#концерт</a>
-          <a class="userblock__hashtag" href="#">#крафт</a>
-        </div>
-      </fieldset>
-      <fieldset class="userblock__block-transport">
-        <legend>Транспорт</legend>
-        <div class="userblock__block-container userblock__block-container-icon">
-          <img class="userblock__icon" src="img/icon/airplane-icon.svg" width="15" height="15" alt="самолёт">
-          <img class="userblock__icon" src="img/icon/auto-iconn.svg" width="15" height="15" alt="авто">
-          <img class="userblock__icon" src="img/icon/bicycle-icon.svg" width="15" height="15" alt="велосипед">
-          <img class="userblock__icon" src="img/icon/run-icon.svg" width="15" height="15" alt="пешком">
-        </div>
-      </fieldset>
+      <div class="userblock__block-fieldset">
+        <fieldset class="userblock__block-hashtag">
+          <legend>Теги</legend>
+          <div class="userblock__block-container">
+            <a class="userblock__hashtag" href="#">#бургер</a>
+            <a class="userblock__hashtag" href="#">#бар</a>
+            <a class="userblock__hashtag" href="#">#футбол</a>
+            <a class="userblock__hashtag" href="#">#концерт</a>
+            <a class="userblock__hashtag" href="#">#крафт</a>
+          </div>
+        </fieldset>
+        <fieldset class="userblock__block-transport">
+          <legend>Транспорт</legend>
+          <div class="userblock__block-container userblock__block-container-icon">
+            <img class="userblock__icon" src="img/icon/airplane-icon.svg" width="15" height="15" alt="самолёт">
+            <img class="userblock__icon" src="img/icon/auto-iconn.svg" width="15" height="15" alt="авто">
+            <img class="userblock__icon" src="img/icon/bicycle-icon.svg" width="15" height="15" alt="велосипед">
+            <img class="userblock__icon" src="img/icon/run-icon.svg" width="15" height="15" alt="пешком">
+          </div>
+        </fieldset>
+      </div>
     </div>
     <div class="plans">
       <div class="plans__wraper">
         <strong class="plans__title">Мои планы:</strong>
         <div class="plans__container">
           <p class="plans__сountry">1.<b>Франция, Италия</b></p>
-          <p class="plans__companion">3 попутчика</p>
+          <div class="plans__companion-container">
+            <p class="plans__companion">3 попутчика</p>
           <p class="plans__date">26 мар — 29 мар</p>
           <button class="plans__button">Изменить</button>
+          </div>
         </div>
         <div class="plans__container">
           <p class="plans__сountry">2.<b>Таиланд, Индонезия</b></p>
-          <p class="plans__companion">1 попутчик</p>
+          <div class="plans__companion-container">
+            <p class="plans__companion">1 попутчик</p>
           <p class="plans__date">1 июл — 15 июл</p>
           <button class="plans__button">Изменить</button>
+          </div>
         </div>
       </div>
     </div>
     <div class="form">
       <div class="form__wrap">
-        <strong class="form__title">Добавить план:</strong>
+        <div class="form__wrap-desc">
+          <strong class="form__title">Добавить план:</strong>
+          <ul>
+            <li>Даты</li>
+            <li>Маршрут</li>
+            <li>Развлечения</li>
+          </ul>
+        </div>
         <form action="https://echo.htmlacademy.ru" method="POST">
           <div class="form__date">
             <div class="form__wraper">
@@ -89,24 +119,36 @@
                 <b class="form__date-subtitle">Шаг 1.<br>Даты пребывания</b>
                 <p class="form__date-subtitle-desc">Укажите предпочтительное количество попутчиков, которых
                   вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
-                <div class="form__date-people">
-                  <section class="form__date-container">
-                    <p class="form__date-search">Ищу попутчиков:</p>
-                    <p class="form__date-search-people">чел.</p>
-                  </section>
-                  <input class="form__people-input" type="number">
-                </div>
-                <div class="form__date-day">
-                  <section class="form__date-container">
-                    <p class="form__date-duration">Длительность:</p>
-                    <p class="form__date-duration-day">дн.</p>
-                  </section>
-                  <input class="form__day-input" type="number">
-                </div>
-                <div class="form__child">
-                  <input class="form__child-input" type="checkbox" value="Можно с детьми" id="child" checked>
-                  <label class="form__child-label" for="child">Можно с детьми</label>
-                </div>
+                  <div class="form__date-wrap">
+                    <div class="form__date-wraper">
+                      <div class="form__date-people">
+                        <section class="form__date-container">
+                          <label class="form__date-search" for="people">Ищу попутчиков:</label>
+                          <p class="form__date-search-people">чел.</p>
+                        </section>
+                        <div class="form__people">
+                          <button class="form__people-button-minus" type="button" onclick="this.nextElementSibling.stepDown(1)">-</button>
+                          <input class="form__people-input" type="number" min="0" id="people" placeholder="2">
+                          <button class="form__people-button-plus" type="button" onclick="this.previousElementSibling.stepUp(1)">+</button>
+                        </div>
+                      </div>
+                      <div class="form__date-day">
+                        <section class="form__date-container">
+                          <label class="form__date-duration" for="day">Длительность:</label>
+                          <p class="form__date-duration-day">дн.</p>
+                        </section>
+                        <div class="form__people">
+                          <button class="form__people-button-minus" type="button" onclick="this.nextElementSibling.stepDown(1)">-</button>
+                          <input class="form__people-input" type="number" id="day" min="0" placeholder="3">
+                          <button class="form__people-button-plus" type="button" onclick="this.previousElementSibling.stepUp(1)">+</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__child">
+                      <input class="form__child-input" type="checkbox" value="Можно с детьми" id="child" checked>
+                      <label class="form__child-label" for="child">Можно с детьми</label>
+                    </div>
+                  </div>
                 <div class="form__calendar">
                   <input class="form__calendar-input" type="date">
                 </div>
@@ -161,7 +203,7 @@
                   <textarea class="form__entertainment-textarea" name="action-plan" placeholder="Пить пиво и лазить
               по старым замкам, наслаждаться архитектурой и вот это все."></textarea>
                   <div class="form__button-container">
-                    <button class="form__button-next" type="button">Следующий шаг
+                    <button class="form__button-next" type="button">Отправить
                       <img class="form__button-img" src="img/icon/show-directions.svg" width="13" height="13"
                         alt="следующий шаг">
                     </button>

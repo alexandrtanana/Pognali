@@ -259,6 +259,10 @@
     width: 618px;
     padding-top: 134px;
     padding-bottom: 66px;
+
+    @media (min-width: $desktop-width) {
+      width: 1192px;
+    }
   }
 }
 
