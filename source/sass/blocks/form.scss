@@ -343,6 +343,10 @@
 
   @media (min-width: $tablet-width) {
     width: 369px;
+
+    @media (min-width: $desktop-width) {
+      width: 730px;
+    }
   }
 }
 
@@ -439,5 +443,10 @@
   @media (min-width: $tablet-width) {
     width: 500px;
     height: 142px;
+
+    @media (min-width: $desktop-width) {
+      width: 730px;
+      height: 142px;
+    }
   }
 }

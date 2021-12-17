@@ -27,6 +27,10 @@
 
   @media (min-width: $tablet-width) {
     width: 618px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -122,6 +126,10 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 16px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .traveler__visit-list {
@@ -131,6 +139,12 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+
+    @media (min-width: $desktop-width) {
+      flex-direction: column;
+      margin-top: -205px;
+      margin-left: 425px;
+    }
   }
 }
 
@@ -169,6 +183,13 @@
     align-items: flex-end;
     margin-top: 40px;
     margin-left: 588px;
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      align-items: baseline;
+      margin-top: 145px;
+      margin-left: 420px;
+    }
   }
 }
 
@@ -176,6 +197,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+    }
   }
 }
 
@@ -198,6 +223,10 @@
   background-color: #edeff6;
   border: none;
   border-radius: 50%;
+
+  @media (min-width: $desktop-width) {
+    background-color: #edeff600;
+  }
 }
 
 .traveler__level {
@@ -206,6 +235,10 @@
     flex-direction: column-reverse;
     align-items: center;
     margin-top: 29px;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 40px;
+    }
   }
 }
 

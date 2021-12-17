@@ -142,11 +142,12 @@
   }
 }
 
-.page-header__nav-item {
+.page-header__nav-link {
   font-size: 30px;
   font-weight: 500;
   line-height: 35px;
   color: #192144;
+  text-decoration: none;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
