@@ -5,9 +5,32 @@
 }
 
 .directions__wraper {
+  display: flex;
+  flex-direction: column;
   padding-bottom: 34px;
   background-color: #edeff6;
   border-radius: 0 0 30px 30px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 130px;
+  }
+}
+
+.directions__wrap {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 688px;
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row-reverse;
+      align-items: end;
+      width: 1178px;
+    }
+  }
 }
 
 .directions__title {
@@ -54,6 +77,12 @@
 
   @media (min-width: $tablet-width) {
     width: 688px;
+
+    @media (min-width: $desktop-width) {
+      order: 1;
+      width: 1178px;
+      margin-left: 172px;
+    }
   }
 }
 
@@ -143,6 +172,12 @@
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     width: 618px;
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      width: 275px;
+      margin-right: 106px;
+    }
   }
 }
 

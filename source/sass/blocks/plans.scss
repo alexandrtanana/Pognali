@@ -13,6 +13,10 @@
 
   @media (min-width: $tablet-width) {
     width: 618px;
+
+    @media (min-width: $desktop-width) {
+      width: 1192px;
+    }
   }
 }
 
@@ -40,6 +44,12 @@
   margin-bottom: 10px;
   background-color: $white;
   border-radius: 10px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 .plans__сountry {
@@ -56,6 +66,20 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      justify-content: start;
+    }
+  }
+}
+
+.plans__companion-container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    width: 500px;
   }
 }
 
@@ -74,6 +98,10 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 20px;
+
+    // @media (min-width: $desktop-width) {
+    //   margin-right: 32px;
+    // }
   }
 }
 
@@ -84,6 +112,7 @@
   color: #1d2e5b;
 
   @media (min-width: $tablet-width) {
+    margin-right: 40px;
     font-size: 20px;
     font-weight: 500;
     line-height: 20px;

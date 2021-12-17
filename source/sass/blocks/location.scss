@@ -8,6 +8,23 @@
   border-radius: 0 0 30px 30px;
 }
 
+.location__container {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      align-items: baseline;
+      width: 1170px;
+    }
+  }
+}
+
 .location__adress {
   width: 143px;
   padding-top: 65px;
@@ -25,6 +42,10 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 28px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 100px;
+    }
   }
 }
 
@@ -53,5 +74,9 @@
     font-weight: 700;
     line-height: 24px;
     border-radius: 20px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 61px;
+    }
   }
 }
