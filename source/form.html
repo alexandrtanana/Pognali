@@ -14,8 +14,15 @@
     <div class="page-header__container">
       <nav class="page-header__nav">
         <div class="page-header__nav-wrap">
-          <a class="page-header__nav-link" href="index.html"><img src="img/icon/lobo-mobile.png" alt="логотип погнали"></a>
-          <button class="page-header__nav-button page-header__nav-button-closed page-header__nav-button-opened"></button>
+          <a class="page-header__nav-link" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/icon/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/icon/logo-desktop.svg">
+              <img class="page-header__nav-img" src="img/icon/logo-mobile.svg" alt="логотип погнали">
+            </picture>
+          </a>
+          <button
+            class="page-header__nav-button page-header__nav-button-closed page-header__nav-button-opened"></button>
           <a class="page__authorization-link" href="#">Авторизоваться</a>
         </div>
         <div class="page-header__nav-menu page-header__nav-opened">
@@ -88,16 +95,16 @@
           <p class="plans__сountry">1.<b>Франция, Италия</b></p>
           <div class="plans__companion-container">
             <p class="plans__companion">3 попутчика</p>
-          <p class="plans__date">26 мар — 29 мар</p>
-          <button class="plans__button">Изменить</button>
+            <p class="plans__date">26 мар — 29 мар</p>
+            <button class="plans__button">Изменить</button>
           </div>
         </div>
         <div class="plans__container">
           <p class="plans__сountry">2.<b>Таиланд, Индонезия</b></p>
           <div class="plans__companion-container">
             <p class="plans__companion">1 попутчик</p>
-          <p class="plans__date">1 июл — 15 июл</p>
-          <button class="plans__button">Изменить</button>
+            <p class="plans__date">1 июл — 15 июл</p>
+            <button class="plans__button">Изменить</button>
           </div>
         </div>
       </div>
@@ -119,36 +126,40 @@
                 <b class="form__date-subtitle">Шаг 1.<br>Даты пребывания</b>
                 <p class="form__date-subtitle-desc">Укажите предпочтительное количество попутчиков, которых
                   вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
-                  <div class="form__date-wrap">
-                    <div class="form__date-wraper">
-                      <div class="form__date-people">
-                        <section class="form__date-container">
-                          <label class="form__date-search" for="people">Ищу попутчиков:</label>
-                          <p class="form__date-search-people">чел.</p>
-                        </section>
-                        <div class="form__people">
-                          <button class="form__people-button-minus" type="button" onclick="this.nextElementSibling.stepDown(1)">-</button>
-                          <input class="form__people-input" type="number" min="0" id="people" placeholder="2">
-                          <button class="form__people-button-plus" type="button" onclick="this.previousElementSibling.stepUp(1)">+</button>
-                        </div>
-                      </div>
-                      <div class="form__date-day">
-                        <section class="form__date-container">
-                          <label class="form__date-duration" for="day">Длительность:</label>
-                          <p class="form__date-duration-day">дн.</p>
-                        </section>
-                        <div class="form__people">
-                          <button class="form__people-button-minus" type="button" onclick="this.nextElementSibling.stepDown(1)">-</button>
-                          <input class="form__people-input" type="number" id="day" min="0" placeholder="3">
-                          <button class="form__people-button-plus" type="button" onclick="this.previousElementSibling.stepUp(1)">+</button>
-                        </div>
+                <div class="form__date-wrap">
+                  <div class="form__date-wraper">
+                    <div class="form__date-people">
+                      <section class="form__date-container">
+                        <label class="form__date-search" for="people">Ищу попутчиков:</label>
+                        <p class="form__date-search-people">чел.</p>
+                      </section>
+                      <div class="form__people">
+                        <button class="form__people-button-minus" type="button"
+                          onclick="this.nextElementSibling.stepDown(1)">-</button>
+                        <input class="form__people-input" type="number" min="0" id="people" placeholder="2">
+                        <button class="form__people-button-plus" type="button"
+                          onclick="this.previousElementSibling.stepUp(1)">+</button>
                       </div>
                     </div>
-                    <div class="form__child">
-                      <input class="form__child-input" type="checkbox" value="Можно с детьми" id="child" checked>
-                      <label class="form__child-label" for="child">Можно с детьми</label>
+                    <div class="form__date-day">
+                      <section class="form__date-container">
+                        <label class="form__date-duration" for="day">Длительность:</label>
+                        <p class="form__date-duration-day">дн.</p>
+                      </section>
+                      <div class="form__people">
+                        <button class="form__people-button-minus" type="button"
+                          onclick="this.nextElementSibling.stepDown(1)">-</button>
+                        <input class="form__people-input" type="number" id="day" min="0" placeholder="3">
+                        <button class="form__people-button-plus" type="button"
+                          onclick="this.previousElementSibling.stepUp(1)">+</button>
+                      </div>
                     </div>
                   </div>
+                  <div class="form__child">
+                    <input class="form__child-input" type="checkbox" value="Можно с детьми" id="child" checked>
+                    <label class="form__child-label" for="child">Можно с детьми</label>
+                  </div>
+                </div>
                 <div class="form__calendar">
                   <input class="form__calendar-input" type="date">
                 </div>

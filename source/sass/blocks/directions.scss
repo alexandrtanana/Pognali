@@ -98,6 +98,17 @@
   }
 }
 
+.directions__country-img {
+  width: 270px;
+  height: 110px;
+
+  @media (min-width: $tablet-width) {
+    width: 559px;
+    height: 140px;
+    margin-left: -373px;
+  }
+}
+
 .directions__country-wrap {
   position: relative;
   top: -14px;
@@ -110,7 +121,9 @@
   border-radius: 15px 15px 15px 15px;
 
   @media (min-width: $tablet-width) {
+    top: -3px;
     flex-direction: column;
+    border-radius: 15px 0 0 15px;
   }
 }
 
