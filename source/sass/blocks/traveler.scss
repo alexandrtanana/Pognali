@@ -44,6 +44,21 @@
   }
 }
 
+.traveler__icon {
+  width: 70px;
+  height: 70px;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    height: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    height: 285px;
+  }
+}
+
 .traveler__profile {
   display: flex;
   flex-direction: column;

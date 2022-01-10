@@ -13,7 +13,13 @@
   <header class="page-header">
     <nav class="page-header__nav">
       <div class="page-header__nav-wrap">
-        <a class="page-header__nav-link" href="#"><img src="img/icon/lobo-mobile.png" alt="логотип погнали"></a>
+        <a class="page-header__nav-link" href="#">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/icon/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/icon/logo-desktop.svg">
+        <img class="page-header__nav-img" src="img/icon/logo-mobile.svg" alt="логотип погнали">
+        </picture>
+      </a>
         <button class="page-header__nav-button page-header__nav-button-closed page-header__nav-button-opened"></button>
         <a class="page__authorization-link" href="#">Авторизоваться</a>
       </div>
@@ -21,8 +27,8 @@
         <div class="page-header__nav-container">
           <ul class="page-header__nav-list">
             <li class="page-header__nav-item"><a class="page-header__nav-link" href="#">О сервисе</a></li>
-              <li class="page-header__nav-item"><a class="page-header__nav-link" href="form.html">Направления</a></li>
-              <li class="page-header__nav-item"><a class="page-header__nav-link" href="catalog.html">Попутчики</a></li>
+            <li class="page-header__nav-item"><a class="page-header__nav-link" href="form.html">Направления</a></li>
+            <li class="page-header__nav-item"><a class="page-header__nav-link" href="catalog.html">Попутчики</a></li>
           </ul>
           <a class="page-header__authorization-link" href="#">Авторизоваться</a>
           <div class="page-header__nav-contacts">
@@ -103,7 +109,11 @@
           </div>
           <div class="directions__container">
             <div class="directions__country">
-              <img src="img/thailand-mobile.png" width="270" height="110" alt="тайланд">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/thailand-desktop.png, img/thailand-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/thailand-desktop.png, img/thailand-desktop@2x.png 2x">
+                <img class="directions__country-img" src="img/thailand-mobile.png" srcset="img/thailand-mobile@2x.jpg 2x" alt="тайланд">
+              </picture>
               <div class="directions__country-wrap">
                 <div class="directions__country-desc">
                   <b class="directions__country-country">Таиланд</b>
@@ -116,10 +126,14 @@
               </div>
             </div>
             <div class="directions__country">
-              <img src="img/france-mobile.png" width="270" height="110" alt="франция">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/france-desktop.png, img/france-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/france-desktop.png, img/france-desktop@2x.png 2x">
+              <img class="directions__country-img" src="img/france-mobile.png" srcset="img/france-mobile@2x.jpg 2x"  alt="франция">
+              </picture>
               <div class="directions__country-wrap">
                 <div class="directions__country-desc">
-                  <b class="directions__country-country">Франия</b>
+                  <b class="directions__country-country">Франция</b>
                   <p class="directions__country-text">Трэ бьен, манифик!</p>
                 </div>
                 <div class="directions__country-visitors">
@@ -129,7 +143,11 @@
               </div>
             </div>
             <div class="directions__country">
-              <img src="img/czech-mobile.png" width="270" height="110" alt="чехия">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/czech-desktop.png, img/czech-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/czech-desktop.png, img/czech-desktop@2x.png 2x">
+              <img class="directions__country-img" src="img/czech-mobile.png" srcset="img/czech-mobile@2x.png 2x"  alt="чехия">
+            </picture>
               <div class="directions__country-wrap">
                 <div class="directions__country-desc">
                   <b class="directions__country-country">Чехия</b>
@@ -164,7 +182,11 @@
         <div class="users__wraper">
           <div class="users__wrap">
             <div class="users__cart">
-              <img src="img/firsova-desktop.png" width="270" height="270" alt="Таня Фирсова">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/firsova-desktop.png, img/firsova-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/firsova-desktop.png, img/firsova-desktop@2x.png 2x">
+                <img class="users__cart-img" src="img/firsova-mobile.png" srcset="img/firsova-mobile@2x.png 2x"  alt="Таня Фирсова">
+              </picture>
               <div class="users__cart-wrap">
                 <b class="users__name">Таня Фирсова</b>
                 <div class="users__cart-container">
@@ -178,7 +200,11 @@
               </div>
             </div>
             <div class="users__cart">
-              <img src="img/demin-desktop.png" width="270" height="270" alt="Петя Дёмин">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/demin-desktop.png, img/demin-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/demin-desktop.png, img/demin-desktop@2x.png 2x">
+              <img class="users__cart-img" src="img/demin-mobile.png" srcset="img/demin-mobile@2x.png 2x" alt="Петя Дёмин">
+              </picture>
               <div class="users__cart-wrap">
                 <b class="users__name">Петя Дёмин</b>
                 <div class="users__cart-container">
